@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Members Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #069;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 150px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #mainContent {
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #E0A51C;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table {
+	text-align: left;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.thrColAbsHdr #container #mainContent table tr th strong {
+	color: #000;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body class="thrColAbsHdr">
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="494,145,622,178" href="members.html" />
+  <area shape="rect" coords="51,140,162,175" href="projects.html" />
+</map>
+<div id="container">
+  <div id="header">
+    <h1><img src="_images/bannerbuttons/members.gif" alt="ARCH Logo" width="972" height="147" border="0" usemap="#MapMap2" />
+      <map name="MapMap2" id="MapMap2"><area shape="rect" coords="145,93,273,139" href="members.html" alt="Members" /><area shape="rect" coords="444,97,573,139" href="materials.html" alt="Materials" /><area shape="rect" coords="303,95,414,139" href="projects.html" alt="Projects" /><area shape="rect" coords="19,96,119,138" href="index.html" alt="Home" /><area shape="rect" coords="597,96,747,140" href="resources.html" alt="Resources" /><area shape="rect" coords="774,97,945,144" href="support.html" alt="Support" /><area shape="rect" coords="328,162,445,194" href="materials.html" />
+      </map>
+    </h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <table width="975" border="0">
+      <tr>
+        <th width="100" rowspan="2" scope="col"><p align="center"><img src="_images/profile_photos/tung_nguyen_smp.png" alt="Tung Nguyen, MD" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4834663','','scrollbars=yes,width=800,height=600')" /><br />
+        <img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4834663','','scrollbars=yes,resizable=yes,width=800,height=600')" /></p></th>
+        <th width="865" bgcolor="#99CCCC" scope="col"><div align="left"> Tung T. Nguyen, MD, ARCH Director </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Professor of Clinical Medicine at UCSF, where I see patients, train health professionals, and conduct community-based participatory research (CBPR) to address cancer screening, tobacco control, and hepatitis B among Asian Americans. I am a Principal Investigator of the Asian American Network for Cancer Awareness, Research, and Training (AANCART) and Co-Leader of the UCSF Helen Diller Family Comprehensive Cancer Center&rsquo;s Cancer Control Program. I also serve as a Commissioner on President Barack Obama's Advisory Commission on AAPIs.<br />
+            <strong>Affiliated websites: <img src="_images/website_logo_thumbs/VCHPP_mdg.gif" alt="Vietnamese Community Health Promotion Project Website" width="36" height="36" onclick="MM_openBrWindow('http://www.suckhoelavang.org/sklvweb/en/','','scrollbars=yes,resizable=yes,width=800,height=600')" /></strong><img src="_images/website_logo_thumbs/CancerCenter_mdg.gif" alt="UCSF Helen Diller Family Comprehensive Cancer Center" width="105" height="36" onclick="MM_openBrWindow('http://cancer.ucsf.edu/','','scrollbars=yes,resizable=yes,width=800,height=600')" /></p></td>
+      </tr>
+    </table>
+    <table width="975" border="0">
+      <tr>
+        <th width="101" rowspan="2" scope="col"><p align="center"><img src="_images/profile_photos/janice_tsoh_md.jpg" width="90" height="129" alt="Janice Tsoh" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/janice.tsoh','','scrollbars=yes,resizable=yes,width=800,height=600')" /><br />
+        </p></th>
+        <th width="864" bgcolor="#99CCCC" scope="col"><div align="left"> Janice Tsoh, PhD, ARCH Co-Director </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a clinical psychologist and Professor of Psychiatry at the University of California San Francisco where I provide cognitive behavioral treatment to adult outpatients and conduct behavioral health research with a goal of
+reducing health disparities.  My research focuses on developing and
+testing interventions to promote healthy living in Asian Americans by
+smoking cessation, healthy nutrition, physical activity and cancer
+screening adherence via family-based and social network approaches, as<br />
+well as mobile health interventions in community and practice-based
+settings.<br />
+<br />
+          <br />
+            <strong>Affiliated website:</strong><br />
+            <br />
+        </p></td>
+      </tr>
+    </table>
+    <p><em>For member info, click on name or picture of member.<br />
+    </em></p>
+    <table width="975" border="0">
+      <tr>
+        <th width="965" bgcolor="#99CCCC" scope="col"><strong><a href="members_core_organization.html">Core Organization Members:</a></strong></th>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/ahs_smg.gif" alt="ahs" width="24" height="24" /> <a href="members_core_organization.html#ahs">Asian Health Services</a> (AHS)</td>
+      </tr>
+      <tr>
+        <td scope="col"><a href="#cphc"> </a><img src="_images/profile_photos/organizations/cphc_smg.gif" width="24" height="24" alt="CPHC" /><a href="members_core_organization.html#cphc"> Chinatown Public Health Center</a> (CPHC)</td>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/cchrc_smg.gif" width="24" height="24" alt="cchrc" /><a href="members_core_organization.html#cchrc"> Chinese Community   Health Resource Center </a>(CCHRC)</td>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/ncapip_smg.gif" width="24" height="24" alt="ncapip" /><a href="members_core_organization.html#ncapip"> National Council of Asian Pacific   Islander Physicians (NCAPIP)</a></td>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/nicos_smg.gif" width="24" height="24" alt="nicos" /> <a href="members_core_organization.html#nicos">NICOS Chinese Health Coalition</a></td>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/sklv_smg.gif" width="24" height="24" alt="vchpp" /><a href="members_core_organization.html#vchpp"> Vietnamese Community Health Promotion Project</a> (VCHPP)</td>
+      </tr>
+      <tr>
+        <td scope="col"><img src="_images/profile_photos/organizations/vrhc_smg.gif" width="24" height="24" alt="vrhc" /><a href="members_core_organization.html#vrhc"> Vietnamese Reach for Health Coalition</a> (VRHC)</td>
+      </tr>
+    </table>
+    <table width="975" border="0">
+      <tr>
+        <th colspan="4" bgcolor="#99CCCC" scope="col"><strong><a href="members_core_individual.html">Core Individual Members</a>:</strong></th>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/melinda_bender_smg.gif" width="17" height="24" /> <a href="members_core_individual.html#melinda">Melinda Bender</a></td>
+        <td><img src="_images/profile_photos/nancy_burke_smg.png" width="17" height="24" alt="Nancy Burke" /><a href="members_core_individual.html#nancy"> Nancy Burke</a></td>
+        <td><img src="_images/profile_photos/JyuLin_Chen_smg.gif" width="16" height="24" alt="Jyu-Lin Chen" /><a href="members_core_individual.html#jyu"> Jyu-Lin Chen</a></td>
+        <td><img src="_images/profile_photos/Yoshimi_Fukouka_smg.gif" width="17" height="24" alt="Yoshimi Fukuoka" /><a href="members_core_individual.html#yoshimi"> Yoshimi Fukuoka</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/gordon_fung_smg.gif" width="17" height="24" alt="Gordon Fung" /><a href="members_core_individual.html#gordon"> Gordon   Fung</a></td>
+        <td><a href="members_core_individual.html#jane"><img src="_images/profile_photos/Jane_Jih_smj.jpg" width="17" height="24" /> Jane Jih</a></td>
+        <td><img src="_images/profile_photos/galen_joshep_smg.gif" width="17" height="24" alt="Galen Joshep" /> <a href="members_core_individual.html#galen">Galen Joseph</a></td>
+        <td><a href="members_core_individual.html#janice"><img src="_images/profile_photos/alka_kanaya_smp.png" width="17" height="24" /> Alka Kanaya</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Leah_Karliner_smg.gif" width="17" height="24" alt="Leah Karliner" /><a href="members_core_individual.html#leah"> Leah Karliner</a></td>
+        <td><img src="_images/profile_photos/Mandana_Khalili_smg.gif" alt="Mandana" width="17" height="24" /> <a href="members_core_individual.html#mandana">Mandana Khalili</a></td>
+        <td><img src="_images/profile_photos/anthony_kim_smg.png" width="17" height="24" alt="Anthony Kim" /> <a href="members_core_individual.html#anthony">Anthony   Kim</a></td>
+        <td><img src="_images/profile_photos/Arnab_Mukherjea_smg.gif" alt="Alan Yee" width="17" height="24" /> <a href="members_core_individual.html#arnab">Arnab Mukherje</a></td>
+      </tr>
+      <tr>
+        <td><a href="members_core_individual.html#van"><img src="_images/profile_photos/Van_Ta_Park_sm.png" width="19" height="24" /> Van M. Ta Park</a></td>
+        <td><img src="_images/profile_photos/Rena_Pasick_smg.gif" width="17" height="24" alt="Rena Pasick" /> <a href="members_core_individual.html#rena">Rena Pasick</a></td>
+        <td><img src="_images/profile_photos/Thu_Quach_smg.gif" width="17" height="24" alt="Thu Quach" /> <a href="members_core_individual.html#thu">Thu Quach</a></td>
+        <td><img src="_images/profile_photos/Janet_Shim_smg.gif" width="17" height="24" alt="Janet Shim" /> <a href="members_core_individual.html#janet">Janet   Shim</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Vineeta_Singh_smg.gif" width="17" height="24" alt="Vineeta Singh" /> <a href="members_core_individual.html#vineeta">Vineeta Singh</a></td>
+        <td><a href="members_core_individual.html#judy"><img src="_images/profile_photos/Judy_Tan_sm.png" width="17" height="24" /> Judy Tan</a></td>
+        <td><img src="_images/profile_photos/Elisa_Tong_smg.gif" width="17" height="24" alt="Elisa Tong" /> <a href="members_core_individual.html#elisa">Elisa   Tong</a></td>
+        <td><img src="_images/profile_photos/Winston_Tseng_smg.gif" width="17" height="24" alt="Winston Tseng" /> <a href="members_core_individual.html#winston">Winston Tseng</a></td>
+      </tr>
+      <tr>
+        <td><a href="members_core_individual.html#janice"><img src="_images/profile_photos/Janice_Tsoh_sm.gif" width="17" height="24" /> Janice Tsoh</a></td>
+        <td><img src="_images/profile_photos/Irene_Yen_smg.gif" width="17" height="24" alt="Irene Yen" /> <a href="members_core_individual.html#irene">Irene Yen</a></td>
+        <td><img src="_images/profile_photos/Grace_Yoo_smg.gif" alt="Leah Karliner" width="17" height="24" /> <a href="members_core_individual.html#grace">Grace Yoo</a></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <table width="975" border="0">
+      <tr>
+        <th width="965" bgcolor="#99CCCC" scope="col"><strong><a href="members_associate_organization.html">Associate Organization Members:</a></strong></th>
+      </tr>
+      <tr>
+        <td><img src="_images/website_logo_thumbs/kcceb_sm.gif" width="24" height="10" alt="kcceb" /> <a href="members_associate_organization.html#kcceb">Korean Community Center of the East Bay (KCCEB)</a></td>
+      </tr>
+      <tr>
+        <td> <img src="_images/profile_photos/organizations/apiahf_smg.gif" width="24" height="24" alt="apiahf" /> <a href="members_associate_organization.html#apiahf">Asian and Pacific Islander American Health Forum</a> (APIAHF)</td>
+      </tr>
+      <tr>
+        <td> <img src="_images/profile_photos/organizations/appeal_smg.gif" width="24" height="24" alt="APPEAL" /> <a href="members_associate_organization.html#appeal">Asian Pacific Partners for Empowerment Advocacy and Leadership</a> (APPEAL)</td>
+      </tr>
+      <tr>
+        <td> <img src="_images/profile_photos/organizations/aapcho_smg.gif" width="24" height="24" alt="AAPCHO" /> <a href="members_associate_organization.html#aapcho">Association of Asian Pacific Community Health Organizations</a> (AAPCHO)</td>
+      </tr>
+      <tr>
+        <td> <a href="members_associate_organization.html#ucaapi">--- UC Asian American and Pacific Islander Policy Multi-campus Research Program</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <table width="975" border="0">
+      <tr>
+        <th colspan="4" bgcolor="#99CCCC" scope="col"><strong><a href="members_associate_individual.html">Associate Individual Members:</a></strong></th>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Adam_Burke_smg.gif" width="17" height="24" alt="Adam Burke" /><a href="members_associate_individual.html#adam"> Adam   Burke</a></td>
+        <td><img src="_images/profile_photos/june_chan_smg.gif" width="17" height="24" alt="June Chan" /><a href="members_associate_individual.html#june"> June   Chan</a></td>
+        <td><img src="_images/profile_photos/Alice_Chen_smg.gif" width="17" height="24" alt="Alice Chen" /> <a href="members_associate_individual.html#alice">Alice Chen</a></td>
+        <td><a href="members_associate_individual.html#edith"><img src="_images/profile_photos/edith_chen_sm.png" width="19" height="24" /> Edith Chen</a></td>
+      </tr>
+      <tr>
+        <td><a href="members_associate_individual.html#hsiu"><img src="_images/profile_photos/Hsiu_Lan_Cheng_sm.png" width="17" height="24" alt="Dr. Hsiu-Lan Cheng" /> Hsiu-Lan Cheng</a></td>
+        <td><img src="_images/profile_photos/jiwon_choi_smg.gif" width="17" height="24" alt="JiWon Choi" /> <a href="members_associate_individual.html#jiwon">JiWon Choi</a></td>
+        <td><img src="_images/profile_photos/scarlett_Gomez_smg.gif" width="17" height="24" alt="Scarlett Gomez" /> <a href="members_associate_individual.html#scarlett">Scarlett Lin Gomez</a></td>
+        <td><a href="members_associate_individual.html#evelyn"><img src="_images/profile_photos/Evelyn_Ho_tb.jpg" width="17" height="24" alt="Ho" /> Evelyn Ho</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Susan_Ivey_smg.gif" width="17" height="24" alt="Susan L. Ivey" /> <a href="members_associate_individual.html#susan">Susan L. Ivey</a></td>
+        <td><img src="_images/profile_photos/Celia_Kaplan_smg.gif" width="17" height="24" alt="Celia Kaplan" /> <a href="members_associate_individual.html#celia">Celia Kaplan</a></td>
+        <td><img src="_images/profile_photos/gem_le_smg.gif" width="17" height="24" alt="Gem Le" /><a href="members_associate_individual.html#gem"> Gem Le</a></td>
+        <td><img src="_images/profile_photos/Stephen_McPhee_smg.jpg" width="17" height="24" alt="Stephen McPhee" /> <a href="members_associate_individual.html#stephen">Stephen McPhee</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Don_Ng_smg.gif" width="17" height="24" alt="Don Ng" /> <a href="members_associate_individual.html#don">Don Ng</a></td>
+        <td><img src="_images/profile_photos/Sunny_Pak_sm.png" width="17" height="24" alt="Dr. Sunny Pak" /> <a href="members_associate_individual.html#sunny">Sunny Pak</a></td>
+        <td><img src="_images/profile_photos/Mike_Potter_smg.gif" width="17" height="24" alt="Michael Potter" /> <a href="members_associate_individual.html#michael">Michael Potter</a></td>
+        <td><a href="members_associate_individual.html#david"><img src="_images/profile_photos/David_Rebanal_sm.png" width="18" height="24" alt="Dr. Rebanal" /> David Rebanal</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Urmimal_Sarkar_smg.gif" width="17" height="24" alt="Urmimala Sarkar" /> <a href="members_associate_individual.html#urmimala">Urmimala   Sarkar</a></td>
+        <td><a href="members_associate_individual.html#saw"><img src="_images/profile_photos/anne_saw_smg.gif" width="17" height="24" alt="Anne Saw" /> Anne Saw</a></td>
+        <td><a href="members_associate_individual.html#arti">Arti Shah</a></td>
+        <td><a href="members_associate_individual.html#ma"><img src="_images/profile_photos/Ma_Somsouk_tb.jpg" width="17" height="24" alt="Ma" /> Ma Somsouk</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/May_Sudhinaraset_sm.png" width="18" height="25" alt="Dr. May Sudhinaraset" /> <a href="members_associate_individual.html#may">May Sudhinaraset</a></td>
+        <td><img src="_images/profile_photos/zian_tseng_smg.gif" width="17" height="24" alt="Zian Tseng" /> <a href="members_associate_individual.html#zian">Zian Tseng</a></td>
+        <td><img src="_images/profile_photos/Jun_Wang_smg.gif" width="17" height="24" alt="Jun Wang" /> <a href="members_associate_individual.html#jun">Jun Wang</a></td>
+        <td><a href="members_associate_individual.html#Jennie"><img src="_images/profile_photos/Ni_Jennie_Zhang_smp.png" width="18" height="24" alt="Ni Zhang, MD" /> Ni (Jennie) Zhang</a></td>
+      </tr>
+      <tr>
+        <th colspan="4" bgcolor="#99CCCC" scope="col"><strong><a href="members_interns.html">Interns:</a></strong></th>
+      </tr>
+      <tr>
+        <td height="35"><a href="members_interns.html#Ann"><img src="images/Ann.jpeg" alt="" width="17" height="24" /></a> <a href="members_interns.html#Ann">Xialing Ann Chen</a></td>
+        <td><a href="members_interns.html#Janet"><img src="_images/profile_photos/Janet_Chu.png" width="17" height="24" alt="Janet Chu" /> Janet Chu</a></td>
+        <td><a href="members_interns.html#Alice"><img src="images/Alice Guan.jpg" alt="" width="17" height="24" /></a> <a href="members_interns.html#Alice">Alice Guan</a></td>
+        <td><img src="_images/profile_photos/Matthew_Jeong.png" width="17" height="24" alt="Matthew Jeong" /><a href="members_interns.html#Matthew"> Matthew Jeong</a></td>
+      </tr>
+      <tr>
+        <td><a href="members_interns.html#Irene"><img src="_images/profile_photos/Irene_Ly_s.png" width="17" height="24" alt="Irene_Ly" /> Irene Ly</a></td>
+        <td><img src="images/Isabel_sm.jpg" width="17" height="24" alt="JiWon Choi" /> <a href="members_interns.html#Isabel">Isabel Nguyen</a></td>
+        <td><img src="images/Minh_sm.jpg" alt="Arti Shah" width="17" height="24" /> <a href="members_interns.html#Minh">Minh Nguyen</a></td>
+        <td><img src="images/Vivan_sm.jpg" width="17" height="24" alt="Susan L. Ivey" /> <a href="members_interns.html#Vi-Van">Vi-Van Nguyen</a></td>
+      </tr>
+      <tr>
+        <td><img src="_images/profile_photos/Vickie_Nguyen_sm.png" width="18" height="26" alt="Vickie Nguyen" /> <a href="members_interns.html#vickie">Vickie Nguyen</a></td>
+        <td><img src="images/Kristine_sm.jpg" width="17" height="24" alt="Alice Chen" /> <a href="members_interns.html#Kristine">Kristine Phung</a></td>
+        <td><img src="_images/profile_photos/Michael_Thanh_Sharp_sm.png" width="18" height="26" alt="Michael Thanh Sharp" /> <a href="members_interns.html#michael">Michael Thanh Sharp</a></td>
+        <td><img src="images/Mimi_sm.jpg" width="17" height="24" alt="Adam Burke" /><a href="members_interns.html#Mimi"> Mimi Tran</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/Filmer_sm.jpg" alt="Melinda Bender" width="17" height="24" /> <a href="members_interns.html#Filmer">Filmer Yu</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <p><img src="_images/bannerbuttons/members_bottom.gif" alt="home" width="972" height="41" border="0" usemap="#Home" />
+      <map name="Home" id="Home"><area shape="rect" coords="775,10,933,33" href="support.html" /><area shape="rect" coords="600,12,737,32" href="resources.html" /><area shape="rect" coords="445,12,566,32" href="materials.html" /><area shape="rect" coords="304,10,412,35" href="projects.html" /><area shape="rect" coords="152,13,273,33" href="members.html" /><area shape="rect" coords="41,11,121,36" href="index.html" />
+        <area shape="rect" coords="149,108,272,139" href="members.html" alt="Members" />
+        <area shape="rect" coords="443,109,567,139" href="materials.html" alt="Materials" />
+        <area shape="rect" coords="303,109,413,139" href="projects.html" alt="Projects" />
+        <area shape="rect" coords="39,106,119,138" href="index.html" alt="Home" />
+        <area shape="rect" coords="597,107,740,140" href="resources.html" alt="Resources" />
+        <area shape="rect" coords="772,110,934,139" href="support.html" alt="Support" />
+      </map>
+    </p>
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+</html>

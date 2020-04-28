@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Project Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #FFF;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 150px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 170px;
+	left: 0;
+	width: 59px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+	color: #06F;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 170px;
+	right: 0;
+	width: 16px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+	color: #06F;
+}
+.thrColAbsHdr #mainContent {
+	margin: 0 100px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. */
+	padding: 0 10px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	color: #000;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table tr th {
+	text-align: left;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]--></head>
+
+<body class="thrColAbsHdr">
+
+<div id="container">
+  <div id="header">
+    <h1><a name="back" id="back"></a><a href="index.html"><img src="_images/bannerbuttons/projects.gif" alt="ARCH Logo" width="972" height="147" border="0" usemap="#MapMap2" />
+      <map name="MapMap2" id="MapMap2">
+        <area shape="rect" coords="149,94,274,139" href="members.html" alt="Members" />
+        <area shape="rect" coords="448,89,579,139" href="materials.html" alt="Materials" />
+        <area shape="rect" coords="-73,-67,41,-20" href="projects.html" alt="Projects" />
+        <area shape="rect" coords="22,93,119,138" href="index.html" alt="Home" />
+        <area shape="rect" coords="610,92,758,141" href="resources.html" alt="Resources" />
+        <area shape="rect" coords="786,94,944,139" href="support.html" alt="Support" />
+      </map>
+    </a></h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+  <h2>&nbsp;</h2>
+<p>&nbsp;</p></div>
+  <div id="sidebar2">
+  <h2>&nbsp;</h2></div>
+  <div id="mainContent">
+    <h1> Current Projects:<br />
+    </h1>
+    <p>1. <a href="#1"></a><a href="#p1">Partnerships in Asian American, Native Hawaiian, and other Pacific Islander</a><br />
+      2. <a href="#c2">The Chinese Community Internet Stop Smoking Project</a><br />
+    3. <a href="#3"></a><a href="#c3">A Family Intervention to Reduce Smoking among Chinese and Vietnamese Men</a><br />
+    4. <a href="#c4">Mediators of Atherosclerosis in South Asians Living in America (MASALA)</a><br />
+    5. <a href="#c5">Developing a Smokefree Intervention for Chinese Smokers and Nonsmokers</a><br />
+    6. <a href="#c6">The Immigrant Experience and Breast Cancer Risk in Asians</a><br />
+    7. <a href="#c7">Practice-based Intervention for Vietnamese &amp; Korean Patients</a><br />
+    8. <a href="#c8">Lay Health Workers and Colorectal Cancer Screening Among Chinese Americans</a><br />
+    9. <a href="#c9">The Gastrointestinal Microbiome in Ulcerative Colitis</a><br />
+    10. 
+    <a href="#c10">Comprehensive Autopsy Characterization of Sudden Cardiac Death</a><br />
+    11. <a href="#c11">A Patient-Centered Intervention to Increase Screening of Hepatitis B and C among Asian Americans</a><br />
+    12. <a href="#c12">Translating Cancer Genetics for the Safety Net Setting</a><br />
+    13. <a href="#c13">A Family-Based Approach To Reduce Smoking in Vietnamese Men</a><br />
+    14. <a href="#c14">Reducing Workplace Chemical Exposures in Nail Salon Workers using an Owner-to-Worker Intervention</a><br />
+    </p>
+<hr />
+<strong><a name="c1" id="c1"></a></strong>
+<table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Partnerships in Asian American, Native Hawaiian, and other Pacific Islander Comparative Effectiveness Community Health Applied Research Network (PACE CHARN)</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> Health Resources &amp; Services Administration (HRSA)<br />
+    <strong>Funding Dates:</strong> September 1, 2010 to August 31, 2013<br />
+    <strong>Principal Investigator:</strong> Rosy Chang Weir (AAPCHO)<br />
+    <strong>Abstract:</strong> The purpose of the project is to build capacity and infrastructure for conducting Patient-Centered Outcomes Research at community health centers serving Asian American, Native Hawaiian, and Other Pacific Islander patients. AAPCHO is one of four networks within the Community Health Applied Research Network (CHARN), a national network of CHCs and universities formed in 2010 that seeks to build capacity by building a national safety net data warehouse to conduct Patient-Centered Outcomes Research. AAPCHO and its member health centers bring CBPR methods expertise, racial/ethnic diversity, and cultural and linguistic sensitivity to the work of the larger national network.<br />
+Please visit http://www.kpchr.org/CHARN for further info.<br />
+<br />
+<table width="767" border="0">
+  <tr>
+    <th width="599" scope="col">&nbsp;</th>
+    <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+  </tr>
+</table>
+<hr />
+<strong><a name="c2" id="222"></a></strong>
+<table width="767" border="0">
+  <tr>
+    <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+    <th width="692" bgcolor="#99CCCC" scope="col">The Chinese Community Internet Stop Smoking Project</th>
+  </tr>
+</table>
+<strong>  Funding Agency:</strong> Tobacco Related Disease Research Program<br />
+  <strong>Funding Dates:</strong> 7/01/2011 – 9/30/2013<br />
+  <strong>Principal Investigator:</strong> Angela Sun (Community PI), Janice Tsoh (Academic PI)<br />
+  <strong>Abstract:</strong> The goal of the proposed research project is establish a community-academic partnership to build accessible and sustainable online self-help resources to promote smoking cessation among Chinese smokers in the U.S. and globally.<br />
+   <br />
+  <table width="767" border="0">
+    <tr>
+      <th width="599" scope="col">&nbsp;</th>
+      <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+  </table>
+  <hr />
+<strong><a name="c3" id="22"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">A Family Intervention to Reduce Smoking among Chinese and Vietnamese Men</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIH/NIDA<br />
+    <strong>Funding Dates:</strong> 3/01/2011 – 2/28/2014<br />
+    <strong>Principal Investigator:</strong> Janice Tsoh (ARCH Co-Investigators Nancy Burke, Stephen J. McPhee, Tung Nguyen,)<br />
+    <strong>Abstract:</strong> The goal of the proposed research project is a proof-of-concept to examine the feasibility and acceptability of a family intervention using lay health worker outreach to involve both smokers and their family members in promoting smoking cessation in the Chinese and Vietnamese populations.
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c4" id="c4"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Mediators of Atherosclerosis in South Asians Living in America (MASALA)</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIH/NHLBI<br />
+    <strong>Funding Dates:</strong> 4/1/2010 - 3/31/2014<br />
+    <strong>Principal Investigator:</strong> Alka Kanaya <br />
+    <strong>Abstract:</strong> The project is a prospective cohort study of a community-based sample of 900 South Asians without clinical cardiovascular disease between the ages of 40 and 79 being sampled from two clinical sites, to investigate the relationship of traditional and novel cardiac risk factors with subclinical cardiovascular disease and the progression of disease.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c5" id="c5"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Developing a Smokefree Intervention for Chinese Smokers and Nonsmokers</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> American Cancer Society<br />
+    <strong>Funding Dates:</strong> 7/1/10-6/30/14<br />
+    <strong>Principal Investigator:</strong> Elisa Tong<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c6" id="c6"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">The Immigrant Experience and Breast Cancer Risk in Asians</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> California Breast Cancer Research Program (CBCRP)<br />
+    <strong>Funding Dates:</strong> 8/2011-7/2014<br />
+    <strong>Principal Investigator:</strong> Scarlett Lin Gomez (ARCH Co-Investigators Thu Quach, Asian Pacific Islander Health Forum, Asian Health Services) 
+    <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+<hr />
+<strong><a name="c7" id="c7"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Practice-based Intervention for Vietnamese &amp; Korean Patients</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> California TRDRP<br />
+    Funding Dates: 8/1/2012-7/31/2014<br />
+    <strong>Principal Investigators:</strong> Susan Huang (Asian Health Services) (ARCH Co-Investigators Thu Quach, Tung Nguyen, Janice Tsoh) <br />
+    <strong>Abstract:</strong> The purpose of the pilot study is to develop a more streamlined culturally competent smoking cessation intervention with Vietnamese and Korean patients that can be integrated into the clinic visit.
+    <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+<hr />
+<strong><a name="c8" id="c8"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Lay Health Workers and Colorectal Cancer Screening Among Chinese Americans</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIH/NCI <br />
+    <strong>Funding Dates:</strong> 9/01/2009-7/31/2014 <br />
+    <strong>Principal Investigators:</strong> Tung Nguyen (ARCH Co-Investigators Adam Burke, Stephen J. McPhee, Rena Pasick, Janice Tsoh, Jun Wang NICOS Chinese Health Coalition)<br />
+    <strong>Abstract:</strong> The goal is to study the effectiveness of Lay Health Workers (LHWs) to promote colorectal cancer screening among Chinese Americans, the mechanisms by which LHWs work, and the role that traditional healers may play. 
+    <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+<hr />
+<strong><a name="c9" id="c9"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">The Gastrointestinal Microbiome in Ulcerative Colitis</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> BROAD Foundation<br />
+    <strong>Funding Dates:</strong> 2012-2014<br />
+    <strong>Principal Investigator:</strong> Uma Mahadevan <br />
+    <strong>Abstract:</strong> First generation immigrants from South Asia with ulcerative colitis will complete an extensive dietary and environmental questionnaire and then provide a stool sample for microbiome testing along with a saliva sample for genetic analysis. They will be compared with non-IBD controls who are from the same household or are relatives living in the US. 
+    <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+<hr />
+<strong><a name="c10" id="c10"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Comprehensive Autopsy Characterization of Sudden Cardiac Death</th>
+      </tr>
+    </table>
+<strong>Funding Agency:</strong> NIH/NHLBI<br />
+    <strong>Funding Dates:</strong> 8/1/10­6/30/15<br />
+    <strong>Principal Investigator:</strong> Zian Tseng<br />
+    <strong>Abstract:</strong> This study uses comprehensive autopsy evaluation of all consecutive Citywide incident sudden cardiac deaths (SCDs) and a random sample of accidental trauma controls over a 3-year period to determine the contemporary rates of SCD and arrhythmic sudden death and its risk factors in a diverse community (san Francisco).
+    <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <strong><br />
+    </strong>
+    <hr />
+    <strong><a name="c11" id="132"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">A Patient-Centered Intervention to Increase Screening of Hepatitis B and C among Asian Americans</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> Patient-Centered Outcomes Research Institute (PCORI)<br />
+    <strong>Funding Dates:</strong> 8/1/2013 - 7/31/2016<br />
+    <strong>Principal Investigator:</strong> Tung Nguyen (ARCH Co-Investigators: Mandana Khalili, Urmimala Sarkar, Janice Tsoh)<br />
+    <strong>Abstract:</strong> The goal of this study is to develop a mobile application in English, Chinese, and Vietnamese with a video doctor delivering messages promoting screening for viral hepatitis and to test the application’s efficacy in a randomized controlled trial.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c12" id="112"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Translating Cancer Genetics for the Safety Net Setting</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong>Susan G. Komen for the Cure<br />
+    <strong>Funding Dates:</strong>7/01/2012 – 6/30/2016<br />
+    <strong>Principal Investigator:</strong>Galen Joseph (ARCH Co-Investigators Rena Pasick)<br />
+    <strong>Abstract:</strong>The overall goal of the   study is to elucidate the strengths and limitations of current cancer genetic   counseling communication practices and to develop communication strategies that   foster effective genetic counselors’ communication with public hospital/clinic   patients who speak Cantonese, Mandarin, Spanish and English.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c13" id="c13"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">A Family-Based Approach To Reduce Smoking in Vietnamese Men</th>
+      </tr>
+    </table>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <strong>Funding Agency:</strong> Tobacco Related Disease Research Program<strong></strong><strong><br />
+    Funding Dates:</strong> 8/01/2013 – 7/31/2016<br />
+    <strong>Principal Investigator:</strong> Janice Tsoh (ARCH Co-Investigators: Nancy Burke, Stephen J. McPhee, Tung Nguyen, Bang Nguyen)<br />
+    <strong>Abstract:</strong> The goal of the proposed research project is to conduct a randomized controlled trial to evaluate the efficacy of the newly developed family-based intervention using lay health worker outreach to promote smoking cessation among Vietnamese American men.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="c14" id="c2"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Reducing Workplace Chemical Exposures in Nail Salon Workers using an Owner-to-Worker Intervention</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIEHS<br />
+    <strong>Funding Dates:</strong> 9/1/2012-5/31/2017<br />
+    <strong>Principal Investigator:</strong> Thu Quach (ARCH Co-Investigators Tung Nguyen, Janice Tsoh)<br />
+    <strong>Abstract:</strong> The goal of this study is to conduct an owner-to-worker education intervention using Vietnamese American nail salon owners to train their workers in ways to reduce workplace chemical exposures. The primary outcome is reduction in ambient air levels of solvents. <br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <hr />
+    <br />
+    <hr />
+<h1>Past Projects: <br />
+</h1>
+<p>1. <a href="#p1">Reducing Disparities in Colorectal Cancer Screening in Vietnamese Americans<br />
+  </a>2. <a href="#p2">Incidence of Sudden Neurological Death</a></p>
+    <hr />
+    <strong><a name="p1" id="p1"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Reducing Disparities in Colorectal Cancer Screening in Vietnamese Americans</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIH/NCI<br />
+    <strong>Funding Dates:</strong> 4/01/2008 – 3/31/2013<br />
+    <strong>Principal Investigator:</strong> Bang Nguyen (ARCH Co-Investigators Stephen J. McPhee, Tung Nguyen)<br />
+    <strong>Abstract:</strong> The goal is to demonstrate the effectiveness of Lay Health Workers and community-based participatory research processes in addressing colorectal cancer screening rates among Vietnamese Americans.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <strong><a name="p2" id="p2"></a></strong>
+    <table width="767" border="0">
+      <tr>
+        <th width="65" bgcolor="#99CCCC" scope="col"><strong>Title:</strong></th>
+        <th width="692" bgcolor="#99CCCC" scope="col">Incidence of Sudden Neurological Death</th>
+      </tr>
+    </table>
+    <strong>Funding Agency:</strong> NIH/NCATS<br />
+    <strong>Funding Dates</strong>: 07/01/12­06/30/13<br />
+    <strong>Principal Investigator:</strong> Anthony Kim (ARCH Co-Investigator Zian Tseng)<br />
+    <strong>Abstract:</strong> The goal of this study is to systematically evaluate the incidence of acute neurologic causes of death in a consecutive and comprehensive series of WHO-criteria sudden cardiac death cases within a well-defined multi-ethnic geographic study base.<br />
+    <br />
+    <table width="767" border="0">
+      <tr>
+        <th width="599" scope="col">&nbsp;</th>
+        <th width="158" scope="col"><h5><a href="#back">Back to top</a></h5></th>
+      </tr>
+    </table>
+    <hr />
+    <p>&nbsp;</p>
+  </div>
+  <div id="footer">
+    <p><img src="_images/bannerbuttons/projects_bottom.gif" alt="Project" width="972" height="41" border="0" usemap="#HomeMap" />
+      <map name="HomeMap" id="HomeMap">
+        <area shape="rect" coords="40,11,120,36" href="index.html" />
+        <area shape="rect" coords="303,10,411,35" href="projects.html" />
+        <area shape="rect" coords="444,12,565,32" href="materials.html" />
+        <area shape="rect" coords="599,12,736,32" href="resources.html" />
+        <area shape="rect" coords="151,13,272,33" href="members.html" />
+        <area shape="rect" coords="774,10,932,33" href="support.html" />
+      </map>
+    <!-- end #footer --></p>
+  </div>
+<!-- end #container --></div>
+</body>
+</html>

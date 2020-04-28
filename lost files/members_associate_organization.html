@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Associate Organization Members Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #069;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 150px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #mainContent {
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #E0A51C;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table {
+	text-align: center;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.thrColAbsHdr #container #mainContent table tr th strong {
+	color: #000;
+}
+.thrColAbsHdr #container #mainContent table tr td p {
+	text-align: left;
+}
+.thrColAbsHdr #container #mainContent table tr td {
+	text-align: left;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]--></head>
+
+<body class="thrColAbsHdr">
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="494,145,622,178" href="members.html" />
+  <area shape="rect" coords="51,140,162,175" href="projects.html" />
+</map>
+<div id="container">
+  <div id="header">
+    <h1><a href="index.html"><img src="_images/bannerbuttons/members.gif" alt="ARCH Logo" width="972" height="147" border="0" usemap="#MapMap2" /></a>
+      <map name="MapMap2" id="MapMap2"><area shape="rect" coords="149,94,274,139" href="members.html" alt="Members" /><area shape="rect" coords="448,89,579,139" href="materials.html" alt="Materials" /><area shape="rect" coords="303,92,417,139" href="projects.html" alt="Projects" /><area shape="rect" coords="22,93,119,138" href="index.html" alt="Home" /><area shape="rect" coords="610,92,758,141" href="resources.html" alt="Resources" /><area shape="rect" coords="786,94,944,139" href="support.html" alt="Support" /><area shape="rect" coords="328,162,445,194" href="materials.html" />
+      </map>
+    </h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <h2>Associate Organization Members: </h2>
+    <a name="kcceb" id="apiahf2"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="125" rowspan="2" scope="col"><p><a href="http://www.kcceb.org" target="_blank"><img src="_images/website_logo_thumbs/kcceb_mdg.gif" width="122" height="36" alt="KCCEB" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="840" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.kcceb.org" target="_blank">Korean Community Center of the East Bay (KCCEB)</a></div></th>
+      </tr>
+      <tr>
+        <td height="20"><p>KCCEB was established in 1977 to serve the needs of the first large wave of Korean immigrants in the 1970’s who were transitioning into American life. KCCEB is the <em>only</em> organization in the Bay Area to provide culturally and linguistically appropriate programming for the most vulnerable segments of the Korean American community(<a href="http://www.kcceb.org" target="_blank">Click here for website www.kcceb.org</a><a href="http://www.apiahf.org/" target="_blank">.</a>)<br />
+          <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="apiahf" id="apiahf"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="125" rowspan="2" scope="col"><p><a href="http://www.apiahf.org/" target="_blank"><img src="_images/profile_photos/organizations/APIAHF.gif" width="120" height="50" alt="apiahf" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="840" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.apiahf.org/" target="_blank">Asian and Pacific Islander American Health Forum (APIAHF)</a></div></th>
+      </tr>
+      <tr>
+        <td height="20"><p>Our mission is to influence policy, mobilize communities, and strengthen programs and organizations to improve the health of Asian Americans, Native Hawaiians, and Pacific Islanders.(<a href="http://www.apiahf.org/" target="_blank">Click here for website.</a>)<br />
+          <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="appeal" id="appeal"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="122" rowspan="2" scope="col"><a href="http://www.appealforcommunities.org/" target="_blank"><img src="_images/profile_photos/organizations/APPEAL.gif" width="120" height="166" alt="APPEAL" /></a></th>
+        <th width="843" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.appealforcommunities.org/" target="_blank">Asian Pacific Partners for Empowerment Advocacy and Leadership</a> (APPEAL)</div></th>
+      </tr>
+      <tr>
+        <td><p>          Our  mission  is to champion social justice and achieve parity and empowerment for Asian Americans, Native Hawaiians and other Pacific Islanders by supporting and mobilizing community-led movements through advocacy and leadership development on critical public health issues. (<a href="http://www.appealforcommunities.org/" target="_blank">Click here for website</a>.)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="aapcho" id="cphc2"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="123" rowspan="2" scope="col"><a href="http://www.aapcho.org/" target="_blank"><img src="_images/profile_photos/organizations/AAPCHO.gif" width="120" height="120" alt="AAPCHO" /></a></th>
+        <th width="842" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.aapcho.org/" target="_blank">Association of Asian Pacific Community Health Organizations (AAPCHO)</a></div></th>
+      </tr>
+      <tr>
+        <td height="93"><p>Our mission is to serve Asian Americans, Native Hawaiians, and other Pacific Islanders. We are dedicated to promoting advocacy, collaboration, and leadership that improves the health status and access of these medically underserved communities. (<a href="http://www.aapcho.org/" target="_blank">Click here for website</a>.)</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="ucaapi" id="cphc3"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="123" rowspan="2" scope="col">UC AAPI<br />
+          Policy MRP        </th>
+        <th width="842" height="25" bgcolor="#99CCCC" scope="col"><div align="left">UC Asian American and Pacific Islander Policy Multi-campus Research Program</div></th>
+      </tr>
+      <tr>
+        <td><p>Our mission is to foster policy-relevant research on AAPI issues important to California. By funding and coordinating applied social science and policy research on topics relevant to California’s growing AAPI populations, the MRP serves as a bridge linking UC researchers to community organizations, the media, and California elected officials and their staff. These activities demonstrate the University of California’s commitment to integrate research, teaching, and community outreach in ways that inform and enlighten public discourse on important public policy issues.</p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  <p><img src="_images/bannerbuttons/members_bottom.gif" alt="Members" width="972" height="41" border="0" usemap="#MapMap2Map" />
+    <map name="MapMap2Map" id="MapMap2Map"><area shape="rect" coords="775,10,933,33" href="support.html" /><area shape="rect" coords="600,12,737,32" href="resources.html" /><area shape="rect" coords="445,12,566,32" href="materials.html" /><area shape="rect" coords="304,10,412,35" href="projects.html" /><area shape="rect" coords="152,13,273,33" href="members.html" /><area shape="rect" coords="41,11,121,36" href="index.html" /><area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" /><area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" /><area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" /><area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" /><area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" /><area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+      <area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" />
+      <area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" />
+      <area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" />
+      <area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" />
+      <area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" />
+      <area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+    </map>
+  </p>
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+</html>

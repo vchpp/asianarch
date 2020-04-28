@@ -1,0 +1,52 @@
+body, p, td, div, span {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+img {
+	border: 0px;
+}
+
+#topmenu ul {color: #000;border-bottom: 1px solid #446EC0;margin: 12px 0px 0px 0px;padding: 0 0 2 0;padding-left: 8px;font-size: 13px;font-weight: bold;}
+#topmenu ul li {display: inline;overflow: hidden;list-style-type: none;margin-left: 5px;}
+#topmenu ul li a, #topmenu ul li a:visited {color: #fff;background: #446EC0;border: 1px solid #446EC0;padding: 2px 5px 2px 5px;margin: 0;text-decoration: none;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+#topmenu ul li a:hover {background: #eee;color: #000;}
+#topmenu ul #menuon a {color: #000;background: #eee;border: 1px solid #446EC0;padding: 2px 5px 2px 5px;margin: 0;text-decoration: none;border-bottom: 2px solid #eee;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+#topmenu ul #menuon a:hover {background: #f5f8ec;}
+
+.instructions {
+	font-size: 14px;
+	font-weight: bold;
+	width: 380px;
+	padding: 3px;
+}
+
+.bmiPanel {
+	background-color: #eeeeee;
+	border-right: 1px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
+	border-left: 1px solid #bbbbbb;
+	border-top: 1px solid #bbbbbb;
+	width: 380px;
+}
+
+.statementPanel {
+	border: 1px solid #446EC0;
+	padding: 5px;
+	background: #eeeeee;
+	width: 380px;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.button {
+	background-color: #00FF00;
+	color: #FF0000;
+}
+
+.result {
+	font-size: 14px;
+	font-weight: bold;
+}

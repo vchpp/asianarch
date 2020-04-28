@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Home Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 1;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-image: url();
+	background-repeat: repeat;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.twoColFixLtHdr #container {
+	width: 975px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+} 
+.twoColFixLtHdr #header {
+	padding: 0 10px 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	text-align: center;
+	background-color: #FFF;
+} 
+.twoColFixLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: left;
+}
+.twoColFixLtHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px;
+	background-color: #FFF;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	height: auto;
+	color: #D6D6D6;
+}
+.twoColFixLtHdr #mainContent {
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 250px;
+} 
+.twoColFixLtHdr #footer {
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#E0A51C;
+} 
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+	text-align: center;
+}
+.twoColFixLtHdr #container #mainContent p {
+	color: #06F;
+	text-align: center;
+}
+.twoColFixLtHdr #container p iframe {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #mainContent h1 {
+	text-align: center;
+}
+.twoColFixLtHdr #container h2 {
+	color: #000;
+}
+.twoColFixLtHdr #container p {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p strong {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p em {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #header table tr th font font {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	font-size: 20px;
+	color: #000;
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: center;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+	font-size: 18px;
+}
+.redcolor {
+	color: #F00;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p {
+	color: #F00;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.twoColFixLtHdr #container blockquote table {
+	font-size: 125%;
+}
+.twoColFixLtHdr #container blockquote p strong {
+	font-size: 125%;
+}
+.twoColFixLtHdr #container blockquote p {
+	font-size: 125%;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLtHdr #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixLtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body bgcolor="#FFFF99" class="twoColFixLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>
+      <!-- end #header -->
+    <img src="../_images/bannerbuttons/home.gif" alt="logo &amp; banner" width="972" height="147" border="0" usemap="#Home" />
+    <map name="Home" id="Home">
+      <area shape="rect" coords="149,96,279,139" href="../members.html" alt="Members" />
+      <area shape="rect" coords="443,93,583,139" href="../materials.html" alt="Materials" />
+      <area shape="rect" coords="303,96,413,139" href="../projects.html" alt="Projects" />
+      <area shape="rect" coords="22,97,119,138" href="../index.html" alt="Home" />
+      <area shape="rect" coords="597,93,749,140" href="../resources.html" alt="Resources" />
+      <area shape="rect" coords="802,91,927,139" href="../support.html" alt="Support" />
+    </map>
+    </h1>
+    <table width="961" border="1" cellpadding="0" cellspacing="0">
+      <tr>
+        <th width="860" scope="col"><pre> The Asian American Research Center on Health (ARCH) includes prominent<br /> researchers, community leaders, and clinicians in the San Francisco Bay Area.
+ The Center will maintain an open and collaborative environment to carry out<br /> the vision, which is to be a leader in Asian American health research to<br /> promote health and health equity in partnership with Asian American<br /> communities. ARCH is currently supported by the <a href="http://cancer.ucsf.edu/" target="_blank">UCSF Helen Diller Family <br /> Comprehensive Cancer Center</a>, the <a href="http://medicine.ucsf.edu/" target="_blank">UCSF Department of Medicine</a>, the <a href="http://dgim.ucsf.edu/diversity/" target="_blank">UCSF Medical</a><a href="http://medicine.ucsf.edu/" target="_blank">
+ </a><a href="http://dgim.ucsf.edu/diversity/" target="_blank">Effectiveness Research Center</a>, and the <a href="http://www.suckhoelavang.org/sklvweb/en/sklvendowment/" target="_blank">Jenkins Bernen Endowment</a>.<br />                                             Tung Nguyen, MD, ARCH Director<br />                                             Alka Kanaya, MD, ARCH Co-Director</pre></th>
+        <th width="95" scope="col"><h5>ARCH<br />
+          Members
+        </h5>
+        <p><img src="../archmembers.gif" width="81" height="121" alt="arch member photos" /></p></th>
+      </tr>
+    </table>
+  </div>
+  <div id="sidebar1">
+    <table width="200" border="0">
+      <tr>
+        <th height="20" align="center" valign="middle" scope="col"><p>Old News:<br />
+        | <a href="2012_12_01.html" title="2012 News" target="_blank">2012</a> | <a href="2013_12_01.html" title="2013 News" target="_blank">2013</a> | <a href="2014_12_01.html" title="2014 News" target="_blank">2014</a> |</p></th>
+      </tr>
+    </table>
+  </div>
+  <h3><br />
+  <img src="../_images/newsbuttons/2015_02_01.gif" width="640" height="22" usemap="#Map" border="0" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="127,2,161,18" href="2015_01_01.html" />
+    <area shape="rect" coords="166,-2,205,21" href="2015_02_01.html" />
+    <area shape="rect" coords="208,2,249,23" href="2015_03_01.html" />
+    <area shape="rect" coords="254,1,293,22" href="2015_04_01.html" />
+    <area shape="rect" coords="298,3,335,19" href="2015_05_01.html" />
+    <area shape="rect" coords="341,2,378,22" href="2015_06_01.html" />
+    <area shape="rect" coords="380,-3,417,20" href="2015_07_01.html" />
+  </map>
+  </h3>
+  <blockquote>
+    <table width="925" border="0">
+      <tr>
+        <td><p align="center"><img src="../_images/newsbuttons/2015_02_26ARCHmtg.gif" width="180" height="72" alt="Feb2015Mtg" /></p></td>
+        <td>Our 2015 Meeting Dates are 2/26, 5/21, 8/27, 11/19,  with a change in time from 1-130pm for business and 130-230pm for scientific  presentations.  The 2/26 presentation  will be by Dr. Hilary Seligman (UCSF/SFGH) and her colleagues on their work  with Chinese Americans, diabetes, and food insecurity.<a href="https://mail.ucsf.edu/owa/redir.aspx?C=fHb6XyDhfEaHM7nLM36Nt_xRVXDiOdEIkMWMzUz_sfjgLOtrmzrZ-TjfhuNCv_rRdNjJf2PsglY.&amp;URL=http%3a%2f%2fwww.ed.gov%2fedblogs%2faapi%2fnews-release-2014-commission%2f" target="_blank"><br />
+          <br />
+        </a></td>
+      </tr>
+      <tr>
+        <td width="190"><p align="center"><img src="../_images/profile_photos/tung_nguyen_smp.png" width="90" height="129" alt="Dr. Nguyen" />  <img src="../_images/profile_photos/alka_kanaya_mdp.png" width="90" height="129" alt="Dr. Kanaya" />Membership<br />
+            Update
+            <br />
+        </p></td>
+        <td width="725"><ul>
+          <li>As announced at the November meeting, Tung Nguyen  will continue as ARCH Director and Alka Kanaya as Co-Director for an additional  2 years.<br />
+            <br />
+          </li>
+          <li>Membership  changes (for details please see the members page on the website)</li>
+          <ul>
+            <li>We  welcome Dr. Van Ta Park (San Jose State University) as a Core Member</li>
+            <li>We  welcome Dr. Ma Somsouk (UCSF/SFGH) as an Associate Member</li>
+            <li>The  following members moved from Associate to Core Membership:</li>
+            <ul>
+              <li>Dr. Melinda Bender  (UCSF)</li>
+              <li>Dr. Jane Jih (UCSF)</li>
+              <li>Dr. Arnab Mukherjea  (Cal State-East Bay)</li>
+              <li>Dr. Irene Yen (UCSF)<br />
+                <br />
+              </li>
+            </ul>
+          </ul>
+        </ul></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="186"><p align="center"><img src="../_images/profile_photos/Jane_Jih_smj.jpg" width="91" height="130" alt="Dr. Jih" /></p></td>
+        <td><ul>
+          <li>ARCH&rsquo;s  first collaborative manuscript &ldquo;Using appropriate body mass index cut points  for overweight and obesity among Asian Americans&quot; in Preventive Medicine  was recognized as the <strong>2014 Asian and  Pacific Islander Caucus Best Published Paper.</strong>  Congratulations to ARCH collaborators <strong>Jane Jih, Arnab Mukherjea, Tung Nguyen,  Janice Tsoh, Yoshimi Fukuoka, Melinda Bender, Winston Tseng and Alka Kanaya</strong>! </li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="178"><p align="center"><img src="../_images/profile_photos/alka_kanaya_mdp.png" width="90" height="129" alt="Dr. Kanaya" /></p></td>
+        <td><ul>
+          <li><strong>Alka Kanaya</strong> and collaborators  recently published an American Diabetes Association (ADA) position statement  recommendation for lowering the BMI cut point for diabetes screening in Asian  Americans to &gt;23 kg/m2 entitled &ldquo;BMI Cut Points to Identify At-Risk Asian  Americans for Type 2 Diabetes Screening&rdquo; in Diabetes Care. The ADA has adopted  this recommendation as part of the association guidelines for diabetes  screening.<br />
+            <br />
+          </li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="46" colspan="2"><p align="center">Congratulations to ARCH investigators for their  recent publications and presentations!<br />        
+        </p></td>
+      </tr>
+      <tr>
+        <td height="558" colspan="2"><ul>
+          <li>            Several ARCH investigators were  featured in the Cancer in Asian and Pacific Islander Populations section of  the November 2014 issue of Cancer  Epidemiology, Biomarkers &amp; Prevention.          <br />
+            <br />
+            </li>
+          <ul>
+            <li><strong>Scarlett Lin Gomez, Thu  Quach</strong> and collaborators published &ldquo;Cancer Research in Asian American, Native Hawaiian,  and Pacific Islander Populations: Accelerating Cancer Knowledge by  Acknowledging and Leveraging Heterogeneity.&rdquo;<br />
+              <br />
+              </li>
+            <li>              <strong>Tung Nguyen </strong>published a  commentary entitled &ldquo;Cancer in Asian American and  Pacific Islander Populations: Linking Research and Policy to Identify and  Reduce Disparities.&rdquo; <br />
+              <br />
+              </li>
+            <li>              <strong>Scarlett Lin Gomez</strong> and collaborators from Sutter  Health and Palo Alto  Medical Foundation Research Institute examined rates of compliance with  cervical, breast, and colorectal cancer screening among Asians from an  electronic health record population and compared them with non-Hispanic whites.&nbsp;            <br />
+              <br />
+              </li>
+            <li>              <strong>Thu  Quach</strong> and colleagues published &ldquo;Disaggregating data on Asian American and Pacific  Islander women to provide new insights on potential exposures to hazardous air  pollutants in California&rdquo; and found there was  substantial variation between tracts for disaggregated AAPI groups, with  notably higher exposure potential index scores for tracts enumerated for Korean  or Japanese women compared with other AAPI groups.            <br />
+              <br />
+              </li>
+            <li>              <strong>Gem  Le, Scarlett Lin Gomez</strong> and collaborators examined lung cancer incidence trends by histology type among  Asian American, Native Hawaiian, and Pacific Islander populations from  1990-2010 using 13 population-based cancer  registries.            <br />
+              <br />
+              </li>
+            </ul>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="558" colspan="2"><ul>
+          <li>ARCH had a great presence at the American Public Health  Association Meeting from November  15-19, 2014 in New Orleans. <br />
+            <br />
+            </li>
+          <ul>
+            <li><strong>Arnab Mukherjea</strong> presented &ldquo;Innovative  Sampling Methods to Generate Representative Asian American, Native Hawaiian,  and Pacific Islander Health Data.&rdquo; </li>
+            </ul>
+        </ul>
+          <ul>
+            <ul>
+              <li><strong>Jane Jih, Gem Le,  Janice Tsoh, Adam Burke, Jun Wang, Stephen McPhee, Tung Nguyen </strong>and<strong> </strong>Kent Woo and Elaine Chow<strong> </strong>from  the<strong> NICOS Chinese Health Coalition</strong> presented &ldquo;Increased Healthy Nutrition and  Physical Activity in a Health Educator-Led Intervention among Older Chinese  American Immigrants.&rdquo;</li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li><strong>Janice Tosh, Gem Le, Rena Pasick, Adam Burke,  Jun Wang, Stephen McPhee, Tung Nguyen </strong>and<strong> </strong>Kent Woo and Elaine Chow<strong> </strong>from  the<strong> NICOS Chinese Health Coalition</strong> presented &ldquo;Relationship Between Limited Health Literacy and Self-Rated &ldquo;Poor  Health&rdquo; in Older Chinese Immigrant Adults.&rdquo; <strong> </strong></li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li><strong>Janice Tsoh, Nancy Burke, </strong>Angela Sun  from the<strong> Chinese Community Health Resource  Center, Tung Nguyen </strong>and<strong> Stephen  McPhee</strong> presented &ldquo;A Social Network Family-Focused Intervention to Promote  Smoking Cessation in Chinese and Vietnamese Male Smokers: A Mixed Methods  Feasibility Study.&rdquo;</li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li><strong>Winston Tseng</strong> and colleagues from the <strong>Asian &amp; Pacific Islander American  Health Forum</strong> presented &ldquo;Identifying Vulnerable Asian Americans under Health  Care Reform: Working in Small Businesses and Health Care Coverage&rdquo; which was  recently published in the Journal of Health Care for the Poor and Underserved. </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li><strong>Association  of Asian Pacific Community Health Organizations </strong>represented  by Jeffrey Caballero and <strong>Winston Tseng</strong> representing UC Berkeley  were speakers at the Asian American and Pacific Islander Leadership Roundtable.          </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>Leaders from the <strong>Association of Asian Pacific Community Health Organizations</strong> presented &ldquo;Working Together on the Success of the  ACA: A National Plan of Outreach, Education, and Enrollment for Asian  Americans, Native Hawaiians, and Pacific Islanders – the Community Health  Center Perspective&rdquo;  and &ldquo;Social media as a content and  information dissemination tool for coalitions working with Limited English  Proficiency (LEP) communities&rdquo; with staff from the Hepatitis B Foundation. </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>Rod  Lew from <strong>Asian Pacific Partners for  Empowerment, Advocacy and Leadership</strong> presented a session focused on &ldquo;Investing in Leaders:  The APPEAL Policy Change Model&rdquo; and &ldquo;Engaging priority populations in  tobacco control advocacy and policy: The LAAMPP experience.&rdquo;&nbsp;<br />
+                <br />
+              </li>
+            </ul>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="558" colspan="2"><ul>
+          <li><strong>Arnab Mukherjea </strong>and <strong>Elisa Tong</strong> published a special  communication &ldquo;<em>Paan</em>&nbsp;(<em>pan</em>)  and <em>paan</em> (<em>pan</em>) <em>masala</em> should be considered tobacco products&rdquo; in  Tobacco Control. This article calls for a universally standard classification  of these smokeless carcinogenic products as tobacco products and thus, subject to the same public health  and clinical protections applied to other forms of tobacco.<br />
+            <br />
+            </li>
+          <li>Lead  by <strong>Melinda Bender</strong>, co-authors <strong>JiWon Choi</strong>,<strong> Yoshimi Fukuoka</strong> and others published &ldquo;Digital technology  ownership, usage, and factors predicting downloading health apps among  Caucasian, Filipino, Korean, and Latino Americans: the digital link to health  survey&rdquo; in JMIR Mhealth Uhealth. Results  indicated that despite a narrowing racial/ethnic &ldquo;digital divide&rdquo;, some  disparities still exist, particularly among racial/ethnic groups with less education  and whose primary language is not English.          </li>
+        </ul>
+          <ul>
+            <li><strong>Alka Kanaya</strong> and  collaborators from Northwestern University report on the association of 10-year  and lifetime predicted cardiovascular disease risk with subclinical  atherosclerosis in South Asians using data from the Mediators of  Atherosclerosis in South Asians Living in America (MASALA) study in the Journal  of the American Heart Association.</li>
+          </ul>
+          <ul>
+            <li><strong>Asian &amp; Pacific Islander American Health Forum</strong> with collaborators from the New York University Center for the Study of  Asian American Health published &ldquo;Recommendations for implementing  policy, systems, and environmental improvements to address chronic diseases in  Asian Americans, Native Hawaiians, and Pacific Islanders&rdquo; in Preventing Chronic  Disease.<br />
+              <br />
+            </li>
+            <li>              <strong>Scarlett Lin Gomez</strong> and collaborators examined the role of comorbidities in breast cancer  survival by race/ethnicity in a manuscript published in Cancer Epidemiology, Biomarkers &amp; Prevention.  The risk of breast cancer-specific mortality  increased among breast cancer cases with a history of diabetes which was  similar across race/ethnicity.<br />
+              <br />
+            </li>
+            <li>              <strong>Alka Kanaya</strong> and co-authors used  the MASALA cohort to elucidate the role of sociodemographic, lifestyle, and  cultural factors in prediabetes and diabetes in South Asian immigrants  published in Annals of Epidemiology.            <br />
+              <br />
+            </li>
+            <li>              <strong>Alka Kanaya </strong>and co-authors also used the MASALA cohort to examine the associations between endogenous sex steroid hormones with  diabetes risk&nbsp;in Diabetic Medicine.            <br />
+              <br />
+            </li>
+            <li>              <strong>Scarlett Lin Gomez</strong> and colleagues reported on birthplace and esophageal cancer incidence patterns  among Asian-Americans using the California Cancer Registry from 1988-2004.<br />
+              <br />
+            </li>
+            <li>              <strong>Jun Wang, Adam Burke, Janice Tsoh, Gem Le, Tung Nguyen and Kent Woo and Elaine Chow</strong> from the NICOS  Chinese Health Coalition recently published in  Preventing Chronic Disease on engaging traditional medicine providers in  colorectal cancer screening education in the Chinese American community.</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="24">&nbsp;</td>
+        <td valign="top">&nbsp;</td>
+      </tr>
+    </table>
+    <p><strong>Abstract Highlights</strong>    </p>
+    <p>Along  with these papers by ARCH investigators, the abstract highlights include:
+    </p>
+    <ul>
+      <li>Using  linked birth-hospital discharge data for 89,703 live births in New York City  from 2001-2002, living in a residential ethnic enclave was associated with  increased odds of gestational diabetes among South Central Asian and Mexican  immigrant women but not African, Chinese and other Hispanic migrant women. </li>
+    </ul>
+    <ul>
+      <li>Zhou  et al investigate the geographic variation in diabetes prevalence and detection  among 98,058 adults from 162 areas in mainland China. A clear negative gradient  in diabetes prevalence was observed from 13.1% in the urban high-socioeconomic  circumstance (SEC) to 8.7% in rural low-SEC areas. Compared with detection of  40.8% in urban high-SEC counties, detection was poorest among rural low-SEC  counties at just 20.5%.    </li>
+    </ul>
+    <ul>
+      <li>In  a cross-sectional study, using ambulatory electronic health record data from  northern California with disaggregated Asian subgroups, achievement of blood  pressure control was lower among Filipino women and non-Hispanic Black men  compared with non-Hispanic White women and men.</li>
+    </ul>
+    <ul>
+      <li>In  a cross-sectional survey of 124 South Asian women in New Jersey and Chicago,  most women perceived high benefits of screening mammography but also perceived  lower susceptibility to breast cancer in the future.    </li>
+    </ul>
+    <ul>
+      <li>Tomioka  et al reported on the impact of the implementation Stanford Diabetes  Self-Management Program with minimal adaptation for 96 Asian and Pacific  Islanders at a community health center with significant behavioral and clinical  improvements at 6 months.</li>
+    </ul>
+    <ul>
+      <li>Le  et al examined differences in knowledge, attitudes, beliefs and perceived risks  regarding colorectal cancer screening among 654 Chinese, Korean and Vietnamese  Americans in the Portland metropolitan area.    </li>
+    </ul>
+    <ul>
+      <li>In  an analysis of the California Health Interview Survey and US Census data, Asian  Americans in highly concordant neighborhoods were more likely to lack a usual  source of care but did not lack doctor visits or experience delays in medical  care and prescriptions.</li>
+    </ul>
+    <ul>
+      <li>In  a manuscript published in the American Journal of Public Health, Cook et al  found that drinking cultures in the country of origin may have enduring effects  on drinking among Asian Americans.    </li>
+    </ul>
+    <ul>
+      <li>Using  the Population-Based Study of ChINese Elderly (PINE) study of 3,159 older  Chinese immigrants in the greater Chicago area, the prevalence of elder  mistreatment among community-dwelling Chinese older adults was 15%.</li>
+    </ul>
+    <ul>
+      <li>In  a 10 year retrospective cohort study of 922 randomly selected Asian patients in  Malaysia, the pooled cohort risk score to estimate the 10-year atherosclerotic  cardiovascular disease (ASCVD) risk appeared to overestimate cardiovascular  risk but this apparent over-prediction could be a result of treatment.    </li>
+    </ul>
+    <ul>
+      <li>In  a mailed survey on cancer follow-up care among a diverse sample of survivors of  breast, prostate, colorectal, ovarian, and endometrial cancers, Asian survivors  reported poorer follow-up care communication and care quality. </li>
+    </ul>
+    <ul>
+      <li>In  the Study of Women's Health Across the Nation (SWAN), US-born Latina, Chinese,  and Japanese immigrants were more likely to report sleep complaints than their  first-generation ethnic counterparts, a finding largely explained by language  acculturation and unmeasured factors associated with language acculturation.    </li>
+    </ul>
+    <ul>
+      <li>More  Mexican American (66.7%) and Vietnamese American patients with type 2 diabetes  (73.7%) than non-Hispanic Whites (NHW) (11.8%) described complementary and  alternative medicine practitioners as being closer to their cultural traditions  than Western practitioners, whereas Vietnamese patients were more likely to  describe use of herbs and supplements as closer to their cultural traditions  compared to Mexican Americans and NHWs.</li>
+    </ul>
+    <ul>
+      <li>Bivariate  secondary analyses of the National Comorbidity Survey-Replication and the  National Latino and Asian American Study (2001-2003) indicated that Asians were  the least likely to report being assessed, counseled, and recommended  medications and specialty care by Meyer et al.    </li>
+    </ul>
+    <ul>
+      <li>Heart  disease and stroke mortality rates for the 6 largest Asian-American subgroups  from 2003 to 2010 were examined using both U.S. Census data and death record  data. Asian Indian men and women and Filipino men had greater proportionate mortality  burden from ischemic heart disease. The proportionate mortality burden of  hypertensive heart disease and cerebrovascular disease, especially hemorrhagic  stroke, was higher in every Asian-American subgroup compared with non-Hispanic  Whites.<br />
+        <br />
+      </li>
+      <li>Among working-age (18-64 years old) Native Hawaiians and Asians with  diabetes in Hawaii, preventable hospitalizations rates were significantly  higher for Native Hawaiians males compared to Whites, but significantly lower  for Chinese men and women, Japanese men   and women, and Filipino men and women; Rates for Native Hawaiian females  did not differ significantly from Whites. </li>
+    </ul>
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25368394?dopt=Abstract" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014  Nov;23(11):2202-5. doi: 10.1158/1055-9965.EPI-14-0624.<br />
+http://www.ncbi.nlm.nih.gov/pubmed/25368394Cancer research in Asian American,  Native Hawaiian, and Pacific Islander populations: accelerating cancer  knowledge by acknowledging and leveraging heterogeneity.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gomez%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Gomez SL</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Glaser%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Glaser SL</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Horn-Ross%20PL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Horn-Ross  PL</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cheng%20I%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Cheng I</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Quach%20T%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Quach T</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Clarke%20CA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Clarke CA</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Reynolds%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Reynolds  P</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Shariff-Marco%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Shariff-Marco  S</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Yang%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Yang J</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lee%20MM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Lee MM</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Satariano%20WA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Satariano  WA</a>5,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hsing%20AW%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368394">Hsing AW</a>2.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25368395?dopt=Abstract" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014  Nov;23(11):2206-7. doi: 10.1158/1055-9965.EPI-14-0640.<br />
+http://www.ncbi.nlm.nih.gov/pubmed/25368395Cancer in Asian American and  Pacific Islander populations: linking research and policy to identify and  reduce disparities.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Nguyen%20TT%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368395">Nguyen TT</a>.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25368396?dopt=Abstract" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014  Nov;23(11):2208-17. doi: 10.1158/1055-9965.EPI-14-0487.http://www.ncbi.nlm.nih.gov/pubmed/25368396Patient and provider  characteristics associated with colorectal, breast, and cervical cancer  screening among Asian Americans.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Thompson%20CA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Thompson  CA</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gomez%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Gomez SL</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chan%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Chan A</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chan%20JK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Chan JK</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=McClellan%20SR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">McClellan  SR</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chung%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Chung S</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Olson%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Olson C</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Nimbal%20V%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Nimbal V</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Palaniappan%20LP%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368396">Palaniappan  LP</a>5.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25368397?dopt=Abstract" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014  Nov;23(11):2218-28. doi: 10.1158/1055-9965.EPI-14-0468.<br />
+http://www.ncbi.nlm.nih.gov/pubmed/25368397Disaggregating data on Asian American and Pacific Islander women  to provide new insights on potential exposures to hazardous air pollutants in  California.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Quach%20T%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Quach T</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Liu%20R%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Liu R</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Nelson%20DO%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Nelson DO</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hurley%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Hurley S</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Von%20Behren%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Von  Behren J</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hertz%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Hertz A</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Reynolds%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368397">Reynolds  P</a>3.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25368400?dopt=Abstract" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014  Nov;23(11):2250-65. doi: 10.1158/1055-9965.EPI-14-0493.<br />
+http://www.ncbi.nlm.nih.gov/pubmed/25368400Lung cancer incidence trends by  histology type among Asian American, Native Hawaiian, and Pacific Islander  populations in the United States, 1990-2010.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cheng%20I%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Cheng I</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Le%20GM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Le GM</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Noone%20AM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Noone AM</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gali%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Gali K</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Patel%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Patel M</a>5,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Haile%20RW%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Haile RW</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wakelee%20HA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Wakelee  HA</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gomez%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25368400">Gomez SL</a>2.
+<hr />
+<strong>Innovative Sampling Methods to Generate  Representative Asian American, Native Hawaiian, and Pacific Islander Health  Data</strong><a href="https://apha.confex.com/apha/142am/webprogram/Paper303397.html">https://apha.confex.com/apha/142am/webprogram/Paper303397.html </a>Arnab Mukherjea, DrPH,  MPH
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper303048.html">Increased Healthy Nutrition and Physical Activity in a Health  Educator-Led Intervention among Older Chinese American Immigrants</a><a href="https://apha.confex.com/apha/142am/webprogram/Paper303048.html">https://apha.confex.com/apha/142am/webprogram/Paper303048.html</a> <br />
+  <br />
+  Jane Jih, MD, MPH, Gem Le, PhD,  Ginny Gildengorin, PhD, Susan Stewart, PhD, Janice Tsoh, PhD, Ching Wong, BS,  Adam Burke, PhD, MPH, LAc, Kent Woo, MSW, Elaine Chow, BA, Jun Wang, PhD,  Lei-Chun Fung, MPH, MSW, Stephen McPhee, MD and Tung T. Nguyen, MD
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper305587.html">Relationship Between Limited Health Literacy and Self-Rated  &ldquo;Poor Health&rdquo; In Older Chinese Immigrant Adults</a><a href="https://apha.confex.com/apha/142am/webprogram/Paper305587.html">https://apha.confex.com/apha/142am/webprogram/Paper305587.html</a>Janice Y. Tsoh, PhD, Tetine Sentell, PhD, Ginny Gildengorin, PhD, Gem Le, PhD, Elaine Chow, BA, Lei-Chun Fung, MPH, MSW, Rena Pasick, DrPH, Susan Stewart, PhD, Ching Wong, BS, Kent Woo, MSW, Adam Burke, PhD, MPH, LAc, Jun Wang, PhD, Stephen J. McPhee, MD, Tung T. Nguyen, MD&nbsp; 
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper305689.html">A Social Network Family-Focused Intervention to Promote  Smoking Cessation in Chinese and Vietnamese Male Smokers: A Mixed Methods  Feasibility Study</a><a href="https://apha.confex.com/apha/142am/webprogram/Paper305689.html">https://apha.confex.com/apha/142am/webprogram/Paper305689.html</a>Janice Y. Tsoh, PhD, Nancy J. Burke, PhD, Ching Wong, BS, Khanh Le, MD, MPH, Ginny Gildengorin, PhD, Anthony Nguyen, Joanne L. Chan, BA, Angela Sun, PhD, MPH, Tung T. Nguyen, MD, Stephen J. McPhee, MD&nbsp; 
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper304856.html">Identifying Vulnerable Asian Americans under Health Care  Reform: Working in Small Businesses and Health Care Coverage</a>&nbsp;<a href="https://apha.confex.com/apha/142am/webprogram/Paper304856.html">https://apha.confex.com/apha/142am/webprogram/Paper304856.html</a>Won Cook, PhD (Asian &amp; Pacific Islander American Health Forum), Winston Tseng, PhD, Kathy Ko Chin&nbsp;(Asian &amp; Pacific  Islander American Health Forum), Iyanrick John, JD, MPH&nbsp;(Asian &amp;  Pacific Islander American Health Forum), Corina Chung,  MS (Asian  &amp; Pacific Islander American Health Forum)
+<hr />
+<strong>Asian  American and Pacific Islander Leadership Roundtable.</strong><br />
+  <a href="https://apha.confex.com/apha/142am/webprogram/Session43010.html">https://apha.confex.com/apha/142am/webprogram/Session43010.html</a>
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper302924.html">Working Together on the Success of the ACA: A National Plan  of Outreach, Education, and Enrollment for Asian Americans, Native Hawaiians,  and Pacific Islanders – the Community Health Center Perspective</a>&nbsp;<a href="https://apha.confex.com/apha/142am/webprogram/Paper302924.html">https://apha.confex.com/apha/142am/webprogram/Paper302924.html</a>Nina Agbayani, RN&nbsp;and Jeffrey Caballero, MPH, Association of Asian Pacific Community Health Organizations,  Oakland, CA
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper302924.html">Working Together on the Success of the ACA: A National Plan  of Outreach, Education, and Enrollment for Asian Americans, Native Hawaiians,  and Pacific Islanders – the Community Health Center Perspective</a>&nbsp;<a href="https://apha.confex.com/apha/142am/webprogram/Paper302924.html">https://apha.confex.com/apha/142am/webprogram/Paper302924.html</a>Nina Agbayani, RN&nbsp;and Jeffrey Caballero, MPH, Association of Asian Pacific Community Health Organizations,  Oakland, CA
+<hr />
+Rod Lew, MPH, Asian Pacific  Partners for Empowerment, Advocacy and Leadership, Oakland, CA<a href="https://apha.confex.com/apha/142am/webprogram/Paper315463.html">https://apha.confex.com/apha/142am/webprogram/Paper315463.html</a>
+<hr />
+<a href="https://apha.confex.com/apha/142am/webprogram/Paper307905.html">Engaging  priority populations in tobacco control advocacy and policy: The LAAMPP  experience</a>&nbsp;<a href="https://apha.confex.com/apha/142am/webprogram/Paper307905.html">https://apha.confex.com/apha/142am/webprogram/Paper307905.html</a>Linda M. Bosma, MA, PhD (Bosma Consulting, Eagan, MN), Rod Lew,  MPH (Asian Pacific Partners for  Empowerment, Advocacy and Leadership, Oakland, CA), Jaime Martinez&nbsp;(Community Development Department, ClearWay Minnesota,  Minneapolis, MN)
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25538311?dopt=Abstract" title="Diabetes care.">Diabetes Care.</a>&nbsp;2015  Jan;38(1):150-158.<br />
+http://www.ncbi.nlm.nih.gov/pubmed/25538311BMI Cut Points to Identify At-Risk  Asian Americans for Type 2 Diabetes Screening.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hsu%20WC%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25538311">Hsu WC</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Araneta%20MR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25538311">Araneta  MR</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kanaya%20AM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25538311">Kanaya AM</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chiang%20JL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25538311">Chiang JL</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Fujimoto%20W%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25538311">Fujimoto  W</a>5.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=mukherjea+tobacco+tong" title="Tobacco control.">Tob Control.</a>&nbsp;2014 Oct  21. pii: tobaccocontrol-2014-051700. doi: 10.1136/tobaccocontrol-2014-051700.  [Epub ahead of print]http://www.ncbi.nlm.nih.gov/pubmed/25335900Paan (pan) and paan (pan) masala  should be considered&nbsp;tobacco products.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Mukherjea%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25335900">Mukherjea&nbsp;A</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Modayil%20MV%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25335900">Modayil  MV</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tong%20EK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25335900">Tong&nbsp;EK</a>3.
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25339246" title="JMIR mHealth and uHealth.">JMIR Mhealth Uhealth.</a>&nbsp;2014 Oct 22;2(4):e43. doi: 10.2196/mhealth.3710.<br />
+  http://www.ncbi.nlm.nih.gov/pubmed/25339246Digital technology ownership,  usage, and factors predicting downloading health apps among caucasian,  filipino, korean, and latino americans: the digital link to health survey.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bender%20MS%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Bender MS</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Choi%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Choi J</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Arai%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Arai S</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Paul%20SM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Paul SM</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gonzalez%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Gonzalez  P</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Fukuoka%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25339246">Fukuoka Y</a>.
+  <hr />
+http://www.ncbi.nlm.nih.gov/pubmed/25277669  Association of 10-year and lifetime  predicted cardiovascular disease risk with subclinical atherosclerosis in South  Asians: findings from the Mediators of Atherosclerosis in South Asians Living  in America (MASALA) study.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kandula%20NR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Kandula  NR</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kanaya%20AM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Kanaya AM</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Liu%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Liu K</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lee%20JY%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Lee JY</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Herrington%20D%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Herrington  D</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hulley%20SB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Hulley SB</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Persell%20SD%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Persell  SD</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lloyd-Jones%20DM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Lloyd-Jones  DM</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Huffman%20MD%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25277669">Huffman  MD</a>1.  
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25412025" title="Preventing chronic disease.">Prev Chronic Dis.</a>&nbsp;2014 Nov 20;11:E202. doi: 10.5888/pcd11.140272.<br />
+  http://www.ncbi.nlm.nih.gov/pubmed/25412025Recommendations for implementing  policy, systems, and environmental improvements to address chronic diseases in  Asian Americans, Native Hawaiians, and Pacific Islanders.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Arista%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Arista P</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tepporn%20E%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Tepporn E</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kwon%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Kwon S</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Rideout%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Rideout C</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Patel%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Patel S</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chung%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Chung M</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bautista%20R%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Bautista  R</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Trinh-Shevrin%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Trinh-Shevrin  C</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ko-Chin%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25412025">Ko-Chin K</a>2.
+  <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25425578" title="Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology.">Cancer  Epidemiol Biomarkers Prev.</a>&nbsp;2014 Nov  25. pii: cebp.1140.2014. [Epub ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25425578  Diabetes and other comorbidities in  breast cancer survival by race/ethnicity: The California Breast Cancer  Survivorship Consortium (CBCSC).  <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wu%20AH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Wu AH</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kurian%20AW%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Kurian AW</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kwan%20ML%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Kwan ML</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=John%20EM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">John EM</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lu%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Lu Y</a>5,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Keegan%20TH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Keegan TH</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gomez%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Gomez SL</a>7,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cheng%20I%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Cheng I</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Shariff-Marco%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Shariff-Marco  S</a>8,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Caan%20BJ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Caan BJ</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lee%20VS%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Lee VS</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Sullivan-Halley%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Sullivan-Halley  J</a>9,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tseng%20CC%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Tseng CC</a>10,<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bernstein%20L%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Bernstein  L</a>11,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Sposto%20R%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Sposto R</a>12,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Vigen%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25425578">Vigen C</a>13.  
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25459085" title="Annals of epidemiology.">Ann Epidemiol.</a>&nbsp;2014 Oct  22. pii: S1047-2797(14)00455-4. doi: 10.1016/j.annepidem.2014.10.013. [Epub  ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25459085    Correlates of prediabetes and type  II diabetes in US South Asians: findings from the Mediators of Atherosclerosis  in South Asians Living in America (MASALA) study.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Shah%20AD%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25459085">Shah AD</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Vittinghoff%20E%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25459085">Vittinghoff  E</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kandula%20NR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25459085">Kandula  NR</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Srivastava%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25459085">Srivastava  S</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kanaya%20AM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25459085">Kanaya AM</a>5.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25443798" title="Diabetic medicine : a journal of the British Diabetic Association.">Diabet  Med.</a>&nbsp;2014 Nov  29. doi: 10.1111/dme.12642. [Epub ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25443798    Endogenous sex steroid hormones and  glucose in a South-Asian population without diabetes: the Metabolic Syndrome  and Atherosclerosis in South-Asians Living in America pilot study.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Needham%20BL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Needham  BL</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kim%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Kim C</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Mukherjee%20B%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Mukherjee  B</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bagchi%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Bagchi P</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Stanczyk%20FZ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Stanczyk  FZ</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kanaya%20AM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25443798">Kanaya AM</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25487184" title="Diseases of the esophagus : official journal of the International Society for Diseases of the Esophagus / I.S.D.E.">Dis  Esophagus.</a>&nbsp;2014 Dec 9.  doi: 10.1111/dote.12302. [Epub ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25487184    Birthplace and esophageal cancer  incidence patterns among Asian-Americans.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kim%20JY%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Kim JY</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Winters%20JK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Winters  JK</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kim%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Kim J</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bernstein%20L%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Bernstein  L</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Raz%20D%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Raz D</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gomez%20SL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25487184">Gomez SL</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25496557" title="Preventing chronic disease.">Prev Chronic Dis.</a>&nbsp;2014 Dec 11;11:E217. doi: 10.5888/pcd11.140341.    http://www.ncbi.nlm.nih.gov/pubmed/25496557    Engaging traditional medicine  providers in colorectal cancer screening education in a chinese american  community: a pilot study.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wang%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Wang J</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Burke%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Burke A</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tsoh%20JY%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Tsoh JY</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Le%20GM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Le GM</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Stewart%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Stewart S</a>5,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Gildengorin%20G%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Gildengorin  G</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wong%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Wong C</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chow%20E%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Chow E</a>7,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Woo%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Woo K</a>8,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Nguyen%20TT%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25496557">Nguyen TT</a>3.    
+<hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25259656" title="Social science &amp; medicine (1982).">Soc Sci Med.</a>&nbsp;2014 Nov;120:180-9. doi:  10.1016/j.socscimed.2014.09.026. Epub 2014 Sep 16.<br />
+  http://www.ncbi.nlm.nih.gov/pubmed/25259656Ethnic enclaves and gestational  diabetes among immigrant women in New York City.<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Janevic%20T%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25259656">Janevic T</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Borrell%20LN%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25259656">Borrell  LN</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Savitz%20DA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25259656">Savitz DA</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Echeverria%20SE%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25259656">Echeverria  SE</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Rundle%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25259656">Rundle A</a>5.
+  <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25352654" title="Diabetes care.">Diabetes Care.</a>&nbsp;2015  Jan;38(1):72-81. doi: 10.2337/dc14-1100. Epub 2014 Oct 28.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25352654  Geographical variation in diabetes  prevalence and detection in china: multilevel spatial analysis of 98,058  adults.  <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Zhou%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Zhou M</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Astell-Burt%20T%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Astell-Burt  T</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bi%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Bi Y</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Feng%20X%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Feng X</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Jiang%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Jiang Y</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Li%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Li Y</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Page%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Page A</a>5,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wang%20L%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Wang L</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Xu%20Y%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Xu Y</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wang%20L%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Wang L</a>6,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Zhao%20W%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Zhao W</a>7,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ning%20G%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352654">Ning G</a>8.  
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25352230" title="American journal of hypertension.">Am J Hypertens.</a>&nbsp;2014 Oct 28. pii: hpu189. [Epub ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25352230    Racial/Ethnic Differences in  Hypertension Prevalence, Treatment, and Control for Outpatients in Northern  California 2010-2012.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Zhao%20B%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Zhao B</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Jose%20PO%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Jose PO</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Pu%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Pu J</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chung%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Chung S</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ancheta%20IB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Ancheta  IB</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Fortmann%20SP%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Fortmann  SP</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Palaniappan%20LP%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25352230">Palaniappan  LP</a>4.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25374197" title="Asian Pacific journal of cancer prevention : APJCP.">Asian Pac  J Cancer Prev.</a>&nbsp;2014;15(20):8719-24. <br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25374197    Attitudes of South Asian women to  breast health and breast cancer screening: findings from a community based  sample in the United States.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Poonawalla%20IB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25374197">Poonawalla  IB</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Goyal%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25374197">Goyal S</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Mehrotra%20N%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25374197">Mehrotra  N</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Allicock%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25374197">Allicock  M</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Balasubramanian%20BA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25374197">Balasubramanian  BA</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/24636628" title="Diabetes research and clinical practice.">Diabetes Res Clin Pract.</a>&nbsp;2014 May;104(2):220-5. doi:  10.1016/j.diabres.2013.12.035. Epub 2014 Jan 3.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/24636628    Improving behavioral and clinical  indicators in Asians and Pacific Islanders with diabetes: findings from a  community clinic-based program.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tomioka%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24636628">Tomioka M</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Braun%20KL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24636628">Braun KL</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ah%20Cook%20V%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24636628">Ah Cook V</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Compton%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24636628">Compton M</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wertin%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24636628">Wertin K</a>3.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/24142376" title="Journal of community health.">J Community Health.</a>&nbsp;2014 Apr;39(2):248-65. doi:  10.1007/s10900-013-9776-8.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/24142376    Differences in knowledge,  attitudes, beliefs, and perceived risks regarding colorectal cancer screening  among Chinese, Korean, and Vietnamese sub-groups.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Le%20TD%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Le TD</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Carney%20PA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Carney PA</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lee-Lin%20F%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Lee-Lin F</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Mori%20M%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Mori M</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chen%20Z%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Chen Z</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Leung%20H%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Leung H</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lau%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Lau C</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lieberman%20DA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24142376">Lieberman  DA</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25393190" title="American journal of public health.">Am J Public Health.</a>&nbsp;2015 Jan;105(1):66-68.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25393190    Variations in Asian Americans: How  Neighborhood Concordance Is Associated With Health Care Access and Utilization.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chang%20E%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393190">Chang E</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chan%20KS%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393190">Chan KS</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25393183" title="American journal of public health.">Am J Public Health.</a>&nbsp;2014 Nov 13:e1-e8. [Epub ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25393183    Asian American Problem Drinking  Trajectories During the Transition to Adulthood: Ethnic Drinking Cultures and  Neighborhood Contexts.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cook%20WK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393183">Cook WK</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Karriker-Jaffe%20KJ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393183">Karriker-Jaffe  KJ</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Bond%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393183">Bond J</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lui%20C%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25393183">Lui C</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25239973" title="Journal of aging and health.">J Aging Health.</a>&nbsp;2014 Oct;26(7):1209-24. doi:  10.1177/0898264314531617.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25239973    Prevalence and correlates of elder  mistreatment in a community-dwelling population of U.S. Chinese older adults.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Dong%20X%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25239973">Dong X</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chen%20R%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25239973">Chen R</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Fulmer%20T%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25239973">Fulmer T</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Simon%20MA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25239973">Simon MA</a>4.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25410585" title="BMC cardiovascular disorders.">BMC Cardiovasc Disord.</a>&nbsp;2014 Nov 20;14:163. doi:  10.1186/1471-2261-14-163.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25410585    Validation of the pooled cohort  risk score in an Asian population - a retrospective cohort study.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chia%20YC%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25410585">Chia YC</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Lim%20HM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25410585">Lim HM</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ching%20SM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25410585">Ching SM</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25403220" title="Journal of clinical oncology : official journal of the American Society of Clinical Oncology.">J Clin  Oncol.</a>&nbsp;2014 Dec  20;32(36):4087-94. doi: 10.1200/JCO.2014.55.5060. Epub 2014 Nov 17.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25403220    Racial and Ethnic Disparities in  Patient-Provider Communication, Quality-of-Care Ratings, and Patient Activation  Among Long-Term Cancer Survivors.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Palmer%20NR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Palmer NR</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kent%20EE%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Kent EE</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Forsythe%20LP%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Forsythe  LP</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Arora%20NK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Arora NK</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Rowland%20JH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Rowland  JH</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Aziz%20NM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Aziz NM</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Blanch-Hartigan%20D%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Blanch-Hartigan  D</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Oakley-Girvan%20I%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Oakley-Girvan  I</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hamilton%20AS%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Hamilton  AS</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Weaver%20KE%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403220">Weaver KE</a>2.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/24497659" title="Sleep.">Sleep.</a>&nbsp;2014 Feb 1;37(2):309-17. doi:  10.5665/sleep.3404.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/24497659    Acculturation and sleep among a  multiethnic sample of women: the Study of Women's Health Across the Nation  (SWAN).    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hale%20L%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24497659">Hale L</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Troxel%20WM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24497659">Troxel WM</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kravitz%20HM%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24497659">Kravitz  HM</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hall%20MH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24497659">Hall MH</a>4,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Matthews%20KA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24497659">Matthews  KA</a>4.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25418251" title="Journal of health care for the poor and underserved.">J Health  Care Poor Underserved.</a>&nbsp;2014;25(4):1941-55.  doi: 10.1353/hpu.2014.0178.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25418251    Complementary and Alternative  Medicine (CAM) Use among Non-Hispanic White, Mexican American, and Vietnamese  American Patients with Type 2 Diabetes.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Nguyen%20H%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Nguyen H</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Sorkin%20DH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Sorkin DH</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Billimek%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Billimek  J</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kaplan%20SH%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Kaplan SH</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Greenfield%20S%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Greenfield  S</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ngo-Metzger%20Q%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25418251">Ngo-Metzger  Q</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25470767" title="Health services research.">Health Serv Res.</a>&nbsp;2014 Dec 2. doi: 10.1111/1475-6773.12261. [Epub  ahead of print]<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25470767    Disparities in Assessment,  Treatment, and Recommendations for Specialty Mental Health Care: Patient  Reports of Medical Provider Behavior.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Meyer%20OL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25470767">Meyer OL</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Saw%20A%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25470767">Saw A</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cho%20YI%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25470767">Cho YI</a>,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Fancher%20TL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25470767">Fancher  TL</a>.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25500233" title="Journal of the American College of Cardiology.">J Am Coll Cardiol.</a>&nbsp;2014 Dec 16;64(23):2486-94. doi:  10.1016/j.jacc.2014.08.048.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25500233    Cardiovascular disease mortality in  asian&nbsp;americans.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Jose%20PO%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Jose PO</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Frank%20AT%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Frank AT</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Kapphahn%20KI%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Kapphahn  KI</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Goldstein%20BA%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Goldstein  BA</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Eggleston%20K%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Eggleston  K</a>3,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Hastings%20KG%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Hastings  KG</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Cullen%20MR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Cullen MR</a>2,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Palaniappan%20LP%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25500233">Palaniappan  LP</a>4.    
+    <hr />
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25535595" title="Hawai'i journal of medicine &amp; public health : a journal of Asia Pacific Medicine &amp; Public Health.">Hawaii J  Med Public Health.</a>&nbsp;2014  Dec;73(12 Suppl 3):8-13.<br />
+    http://www.ncbi.nlm.nih.gov/pubmed/25535595    Disparities in Diabetes-Related  Preventable Hospitalizations among Working-Age Native Hawaiians and Asians in  Hawai'i.    <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Sentell%20TL%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Sentell  TL</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Juarez%20DT%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Juarez DT</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Ahn%20HJ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Ahn HJ</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Tseng%20CW%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Tseng CW</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Chen%20JJ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Chen JJ</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Salvail%20FR%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Salvail  FR</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Miyamura%20J%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Miyamura  J</a>1,&nbsp;<a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Mau%20MK%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25535595">Mau MK</a>1.    
+    <hr />
+    <br clear="all" />
+<p>[ <a href="#top">Back to Top</a> ]</p>
+    <p>&nbsp;</p>
+  </blockquote>
+  <img src="../_images/bannerbuttons/home_bottom.gif" alt="2012 Dec News" width="972" height="41" border="0" usemap="#HomeMap" />
+  <map name="HomeMap" id="HomeMap">
+    <area shape="rect" coords="40,11,120,36" href="../index.html" />
+    <area shape="rect" coords="303,10,411,35" href="../projects.html" />
+    <area shape="rect" coords="444,12,565,32" href="../materials.html" />
+    <area shape="rect" coords="599,12,736,32" href="../resources.html" />
+    <area shape="rect" coords="151,13,272,33" href="../members.html" />
+    <area shape="rect" coords="774,10,932,33" href="../support.html" />
+  </map>
+  <!-- end #container -->
+</div>
+</body>
+</html>

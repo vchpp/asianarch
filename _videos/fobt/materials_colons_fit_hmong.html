@@ -1,0 +1,247 @@
+<%@LANGUAGE="JAVASCRIPT" CODEPAGE="65001"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Material Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #FFF;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 200px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+	color: #06F;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+	color: #06F;
+}
+.thrColAbsHdr #mainContent {
+	margin: 0 0px; /* the right and left margins on this div element creates the two outer columns on the sides of the page. No matter how much content the sidebar divs contain, the column space will remain. */
+	padding: 0 10px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	color: #06F;
+	text-align: center;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table tr th p {
+	text-align: left;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<script src="../../../Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body class="thrColAbsHdr" onclick="MM_preloadImages('../../_images/materials_buttons/colon_cantonese_blue.gif')">
+
+<div id="container">
+  <div id="header">
+    <h1><img src="../../_images/bannerbuttons/materials.gif" alt="Materials" width="972" height="147" border="0" usemap="#Home" />
+      <map name="Home" id="Home">
+        <area shape="rect" coords="149,108,272,139" href="../../members.html" alt="Members" />
+        <area shape="rect" coords="443,109,567,139" href="../../materials.html" alt="Materials" />
+        <area shape="rect" coords="303,109,413,139" href="../../projects.html" alt="Projects" />
+        <area shape="rect" coords="39,106,119,138" href="../../index.html" alt="Home" />
+        <area shape="rect" coords="597,107,740,140" href="../../resources.html" alt="Resources" />
+        <area shape="rect" coords="772,110,934,139" href="../../support.html" alt="Support" />
+      </map>
+    </h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <table width="975" border="0">
+      <tr>
+        <th colspan="2" scope="col"><p>FOBT Videos:<br />
+        Click   on the appropriate link below to watch how to do a Fecal Immunochemical Test   (FIT) or a Hemoccult (Guaiac) test to screen for colorectal cancer in the   appropriate language.</p>
+        <p>&nbsp;</p></th>
+      </tr>
+      <tr>
+        <td width="228"><p><strong>ENGLISH:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_english.html">FIT</a> | <a href="materials_colons_guaiac_english.html">Guaiac</a></p></td>
+        <td width="737" rowspan="9"><p align="center"> Hmong: How to do a Fecal Immunochemical Test (FIT)</p>
+          <p align="center">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="662" height="531" id="FLVPlayer">
+              <param name="movie" value="FLVPlayer_Progressive.swf" />
+              <param name="quality" value="high" />
+              <param name="wmode" value="opaque" />
+              <param name="scale" value="noscale" />
+              <param name="salign" value="lt" />
+              <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Halo_Skin_3&amp;streamName=FIT_Hmong&amp;autoPlay=true&amp;autoRewind=false" />
+              <param name="swfversion" value="8,0,0,0" />
+              <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+              <param name="expressinstall" value="../../../Scripts/expressInstall.swf" />
+              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+              <!--[if !IE]>-->
+              <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="662" height="531">
+                <!--<![endif]-->
+                <param name="quality" value="high" />
+                <param name="wmode" value="opaque" />
+                <param name="scale" value="noscale" />
+                <param name="salign" value="lt" />
+                <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Halo_Skin_3&amp;streamName=FIT_Hmong&amp;autoPlay=true&amp;autoRewind=false" />
+                <param name="swfversion" value="8,0,0,0" />
+                <param name="expressinstall" value="../../../Scripts/expressInstall.swf" />
+                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                <div>
+                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                </div>
+                <!--[if !IE]>-->
+              </object>
+              <!--<![endif]-->
+            </object>
+          </p></td>
+      </tr>
+      <tr>
+        <td><strong>CANTONESE:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_cantonese.html">FIT</a> | <a href="materials_colons_guaiac_cantonese.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>MANDARIN:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_mandarin.html">FIT</a> | <a href="materials_colons_guaiac_mandarin.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>Hmong:</strong><br />          <a href="materials_colons_fit_hmong.html">FIT</a> | <a href="materials_colons_guaiac_hmong.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>Illokano:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_ilokano.html">FIT</a> | <a href="materials_colons_guaiac_illokano.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>TAGALOG:</strong><br />          <a href="materials_colons_fit_tagalog.html">FIT</a> | <a href="materials_colons_guaiac_tagalog.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>KOREAN:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_korean.html">FIT</a> | <a href="materials_colons_guaiac_korean.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td><strong>VIETNAMESE:</strong><strong><br />
+        </strong> <a href="materials_colons_fit_vietnamese.html">FIT</a> | <a href="materials_colons_guaiac_vietnamese.html">Guaiac</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <h1>&nbsp;</h1>
+<p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  </div>
+  <div id="footer">
+    <p>
+      <map name="HomeMapMap" id="HomeMapMap">
+        <area shape="rect" coords="40,11,120,36" href="../../index.html" />
+        <area shape="rect" coords="303,10,411,35" href="../../projects.html" />
+        <area shape="rect" coords="444,12,565,32" href="../../materials.html" />
+        <area shape="rect" coords="599,12,736,32" href="../../resources.html" />
+        <area shape="rect" coords="151,13,272,33" href="../../members.html" />
+        <area shape="rect" coords="774,10,932,33" href="../../support.html" />
+      </map>
+    <img src="../../_images/bannerbuttons/materials_bottom.gif" width="972" height="41" border="0" usemap="#HomeMapMapMap" />
+    <map name="HomeMapMapMap" id="HomeMapMapMap">
+      <area shape="rect" coords="40,11,120,36" href="../../index.html" />
+      <area shape="rect" coords="303,10,411,35" href="../../projects.html" />
+      <area shape="rect" coords="444,12,565,32" href="../../materials.html" />
+      <area shape="rect" coords="599,12,736,32" href="../../resources.html" />
+      <area shape="rect" coords="151,13,272,33" href="../../members.html" />
+      <area shape="rect" coords="774,10,932,33" href="../../support.html" />
+    </map>
+    </p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FLVPlayer");
+swfobject.registerObject("FLVPlayer");
+//-->
+</script>
+</body>
+</html>

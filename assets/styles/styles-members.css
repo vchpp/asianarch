@@ -1,0 +1,237 @@
+
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #069;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.thrColAbsHdr #container {
+	width: 90%;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	padding: 0 10px 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	text-align: center;
+	background-color: #FFF;
+}
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #mainContent {
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #E0A51C;
+}
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table {
+	text-align: left;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.thrColAbsHdr #container #mainContent table tr th strong {
+	color: #000;
+}
+
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+
+
+.topnav {
+  overflow: hidden;
+	/* display: inline-block; */
+	/* justify: space-around;
+	list-style: none; */
+  /* background-color: #ffffff; */
+	background-color: #2B9998;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.topnav a {
+	float: left;
+	margin: 2px;
+  display: block;
+  color: #f2f2f2;
+	background-color: #2B9998;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+/* .topnav .non-dropdown {
+	padding: 14px 16px;
+} */
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 27px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.active {
+	background-color: white;
+	color: #2B9998;
+}
+
+h1 {
+  text-align: left;
+}

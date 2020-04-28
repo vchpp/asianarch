@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Home Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 1;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-image: url();
+	background-repeat: repeat;
+	background-color: #FFF;
+}
+.twoColFixLtHdr #container {
+	width: 975px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	color: #000;
+} 
+.twoColFixLtHdr #header {
+	padding: 0 10px 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	text-align: center;
+	background-color: #FFF;
+} 
+.twoColFixLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: left;
+}
+.twoColFixLtHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px;
+	background-color: #FFF;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	height: auto;
+	color: #D6D6D6;
+}
+.twoColFixLtHdr #mainContent {
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 250px;
+} 
+.twoColFixLtHdr #footer {
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#E0A51C;
+} 
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.twoColFixLtHdr #container #mainContent p {
+	color: #06F;
+	text-align: center;
+}
+.twoColFixLtHdr #container p iframe {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #mainContent h1 {
+	text-align: center;
+}
+.twoColFixLtHdr #container h2 {
+	color: #000;
+}
+.twoColFixLtHdr #container p {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p strong {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p em {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #header table tr th font font {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	font-size: 20px;
+	color: #000;
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: center;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+	font-size: 18px;
+}
+.redcolor {
+	color: #F00;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLtHdr #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixLtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFF99" class="twoColFixLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>
+      <!-- end #header -->
+    <img src="../_images/bannerbuttons/home.gif" alt="logo &amp; banner" width="972" height="147" border="0" usemap="#Home" />
+    <map name="Home" id="Home">
+      <area shape="rect" coords="149,96,279,139" href="../members.html" alt="Members" />
+      <area shape="rect" coords="443,93,583,139" href="../materials.html" alt="Materials" />
+      <area shape="rect" coords="303,96,413,139" href="../projects.html" alt="Projects" />
+      <area shape="rect" coords="39,106,119,138" href="../index.html" alt="Home" />
+      <area shape="rect" coords="597,93,749,140" href="../resources.html" alt="Resources" />
+      <area shape="rect" coords="802,91,927,139" href="../support.html" alt="Support" />
+    </map>
+    </h1>
+    <table width="968" border="1" cellpadding="0" cellspacing="0">
+      <tr>
+        <th width="1219" scope="col"><pre> The Asian American Research Center on Health (ARCH) includes prominent researchers, 
+ community leaders, and clinicians in the San Francisco Bay Area. The Center will 
+ maintain an open and collaborative environment to carry out the vision, which is to <br /> be a leader in Asian American health research to promote health and health equity in 
+ partnership with Asian American communities. ARCH is currently supported by the <a href="http://cancer.ucsf.edu/" target="_blank">
+ UCSF Helen Diller Family Comprehensive Cancer Center</a>, the <a href="http://medicine.ucsf.edu/" target="_blank">UCSF Department of Medicine</a>,
+ the <a href="http://dgim.ucsf.edu/diversity/" target="_blank">UCSF Medical Effectiveness Research Center</a>, and the <a href="http://www.suckhoelavang.org/sklvweb/en/sklvendowment/" target="_blank">Jenkins Bernen Endowment</a>.<br /><br />                                             Tung Nguyen, MD, ARCH Director<br />                                             Alka Kanaya, MD, ARCH Co-Director</pre></th>
+      </tr>
+    </table>
+  </div>
+  <div id="sidebar1">
+    <table width="200" border="0">
+      <tr>
+        <th height="20" scope="col"><p><strong>UP COMING EVENTS</strong><em></em></p></th>
+      </tr>
+    </table>
+    <table width="200" border="0">
+      <tr>
+        <th height="56" bgcolor="#99CCCC" scope="col"><p><img src="../_images/newsbuttons/2013_08_29ARCHmtg.gif" width="180" height="72" alt="ARCH Meeting" /><br />
+        <br />
+          </p></th>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  <p>&nbsp;</p></div>
+  <br />
+  <img src="../_images/newsbuttons/2013_08_01.gif" alt="April 2013 News" width="640" height="22" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="208,3,246,19" href="2013_03_01.html" />
+    <area shape="rect" coords="164,4,202,19" href="2013_02_01.html" />
+    <area shape="rect" coords="126,3,160,19" href="2013_01_01.html" />
+    <area shape="rect" coords="251,4,290,21" href="2013_04_01.html" />
+    <area shape="rect" coords="296,3,337,20" href="2013_05_01.html" />
+    <area shape="rect" coords="341,3,380,18" href="2013_06_01.html" />
+    <area shape="rect" coords="384,4,417,20" href="2013_07_01.html" />
+    <area shape="rect" coords="422,5,464,20" href="2013_08_01.html" />
+    <area shape="rect" coords="469,4,503,21" href="2013_09_01.html" />
+    <area shape="rect" coords="512,3,549,20" href="2013_10_01.html" />
+    <area shape="rect" coords="552,5,595,19" href="2013_11_01.html" />
+    <area shape="rect" coords="599,3,636,21" href="2013_12_01.html" />
+  </map>
+  <blockquote>
+    <hr align="center" />
+    <table width="684" border="0">
+      <tr>
+        <th width="678" bgcolor="#FFFF00" scope="col"><strong>Monthly Newsletter: July and August</strong></th>
+      </tr>
+    </table>
+    <p>All<br />
+      <br />
+      As things are slow in the summer, we combined two months for this newsletter. <br />
+      <br />
+      The highlight of the scientific literature is publication of ARCH member Scarlett Lin Gomez and her Cancer Prevention Institute of California’s study of cancer incidence trends among Asian Americans from 1990 to 2008, the first comprehensive study of trends in disaggregated Asian groups. The paper is full of great details that should help to delineate areas of needs for research, outreach, and policy.  Here are just a few highlights:<br />
+      <br />
+      -Increasing rates among men: Prostate for Asian Indians/Pakistanis, Filipinos, Koreans; Colorectal for Koreans; Liver for Filipinos, Koreans, and Vietnamese<br />
+      <br />
+    -Increasing rates among women: Uterine for Asian Indians, Chinese, Filipina, Japanese; Colorectal for Koreans, Laotians; Lung for Filipinas, Koreans; Thyroid for Filipinas; Breast for most groups</p>
+    <p>Gomez SL, Noone AM, Lichtensztajn DY, et al. Cancer Incidence Trends Among Asian American Populations in the United States, 1990 to 2008. <em>J Natl Cancer Inst. </em>Jul 22 2013. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23878350" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/23878350</a><br />
+      <br />
+      A second highlight is from a paper published in 2012 by Judy Wang from Georgetown on a randomized controlled trial comparing culturally targeted video to generic video to a fact sheet on mammography receipt among Chinese American women.  The good news is all 3 interventions led to high rates of self-reported mammography receipt. The cultural targeted video was not better than the generic video and better than the fact sheet only for those who are low acculturated women. To me, these two papers capture what I think will be the future trend for Asian American health research---more disaggregation of data but minimal intervention targeting except for those who are least acculturated.</p>
+    <p>Wang JH, Schwartz MD, Brown RL, Maxwell AE, Lee MM, Adams IF, Mandelblatt JS. Results of a randomized controlled trial testing the efficacy of a culturally targeted and a generic video on mammography screening among chinese-american immigrants. Cancer Epidemiol Biomarkers Prev. 2012 Nov;21(11):1923-32. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22971901" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/22971901</a><br />
+      <br />
+      Other research highlights include a paper from Brown University that confirms what we all thought, which is that Asian ethnic groups tend to live in segregated areas. A national study of alcohol use showed that the rate of past-month binge alcohol use were highest among Korean Americans (24.6%), followed by Filipino Americans (14.5%), Japanese Americans (14.2%), Asian Indian Americans (10.1%), and Chinese Americans (8.1%).	</p>
+    <p>Logan JR and Zhang W. Separate but Equal: Asian Nationalities in the U.S. Department of Sociology, Brown University, June 2013. <a href="http://www.s4.brown.edu/us2010/Data/Report/report06112013.pdf" target="_blank">http://www.s4.brown.edu/us2010/Data/Report/report06112013.pdf</a><br />
+      <br />
+    Lee HK, Han B, Gfroerer JC. Differences in the prevalence rates and correlates of alcohol use and binge alcohol use among five Asian American subpopulations.Addict Behav. 2013 Mar;38(3):1816-23. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23254233" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/23254233</a></p>
+    <p><em>-Tung Nguyen</em>    </p>
+    <p><img src="../_images/last_resource_frontpage.gif" width="648" height="30" alt="latest resources" /></p>
+    <p><strong><a href="../materials/cpic/Cancer_Surveillance_Research_in_Asian_Americans.pdf" target="_blank">Cancer Surveillance Research in Asian Americans </a>presntation<a href="../materials/cpic/Cancer_Surveillance_Research_in_Asian_Americans.pdf" target="_blank"><br />
+    </a><em>by Scarlett Lin Gomez, MPH, PhD, from CPIC </em></strong></p>
+    <hr />
+    <p>ARCH is proud to announce newly funded projects led by ARCH investigators:</p>
+    <p><strong>A Patient-Centered Intervention to Increase Screening of Hepatitis B and C among Asian Americans<br />
+      <em>Funding Agency:</em></strong> Patient-Centered Outcomes Research Institute (PCORI)<br />
+      <strong><em>Funding Dates:</em></strong> 8/1/2013 - 7/31/2016<br />
+      <strong><em>Principal Investigator:</em></strong> Tung Nguyen (ARCH Co-Investigators: Mandana Khalili, Urmimala Sarkar, Janice Tsoh)<br />
+    <strong><em>Abstract:</em></strong> The goal of this study is to develop a mobile application in English, Chinese, and Vietnamese with a video doctor delivering messages promoting screening for viral hepatitis and to test the application’s efficacy in a randomized controlled trial.<br />
+    </p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p><strong>A Family-Based Approach To Reduce Smoking in Vietnamese Men<br />
+      Funding Agency:</strong> Tobacco Related Disease Research Program<strong></strong><strong><br />
+      Funding Dates:</strong> 8/01/2013 – 7/31/2016<br />
+  <strong>Principal Investigator:</strong> Janice Tsoh (ARCH Co-Investigators: Nancy Burke, Stephen J. McPhee, Tung Nguyen, Bang Nguyen)<br />
+  <strong>Abstract:</strong> The goal of the proposed research project is to conduct a randomized controlled trial to evaluate the efficacy of the newly developed family-based intervention using lay health worker outreach to promote smoking cessation among Vietnamese American men. </p>
+    <p><img src="../_images/other_resources.gif" width="648" height="30" alt="Other Resources" /></p>
+    <p><strong onclick="MM_openBrWindow('http://www.nih.gov/news/health/nov2012/nci-11.htm','','scrollbars=yes,resizable=yes,width=800,height=600')">Lung Cancer Study</strong></p>
+    <p>An international group of scientists has identified three genetic regions that   predispose Asian women who have never smoked to lung cancer. The finding   provides further evidence that risk of lung cancer among never-smokers,   especially Asian women, may be associated with certain unique inherited genetic   characteristics that distinguishes it from lung cancer in smokers.<br />
+      <br />
+    Lung   cancer in never-smokers is the seventh leading cause of cancer deaths worldwide,   and the majority of lung cancers diagnosed historically among women in Eastern   Asia have been in women who never smoked. The specific genetic variations found   in this study had not been associated with lung cancer risk in other   populations.    </p>
+    <p><a href="http://www.nih.gov/news/health/nov2012/nci-11.htm" target="_blank">http://www.nih.gov/news/health/nov2012/nci-11.htm</a></p>
+    <hr />
+    <p><strong>Asian Americans, Mental Health, and Tobacco Use from the 2009–2011 National   Survey on Drug Use and Health</strong></p>
+    <p>Based on the 2009-2011 National Survey on Drug Use and Health, the CDC reports that 14.9% of Asian American men and 16.6% of Asian American women report having any mental illness.  Asian Americans with mental illness have a current smoking prevalence twice as high as those without (20.6% vs. 10.4%). Asian American women with any mental illness have 3 times the smoking prevalence of those without (16.0% vs. 5.5%). <br />
+    </p>
+    <p>Mental illness was assessed for the preceding year using  a series of 14 questions that made up two scales measuring psychological distress (Kessler-6) and disability (World Health Organization Disability Assessment Schedule). It should be noted that the NSDUH is conducted at the respondent’s household but only in English or Spanish, potentially missing 1/3 of Asian Americans who have limited English proficiency.<br />
+    </p>
+    <p>Details can be found at: <a href="http://www.cdc.gov/mmwr/preview/mmwrhtml/mm62e0205a1.htm?s_cid=mm62e0205a1_e" target="_blank">http://www.cdc.gov/mmwr/preview/mmwrhtml/mm62e0205a1.htm?s_cid=mm62e0205a1_e</a></p>
+<hr />
+    <p><strong>Asian Vaccination coverage from the CDC: MMWR Vol. 62 / Early Release</strong></p>
+    <p>With the caveat that this is data from the National Health Interview Survey, which is not administered in an Asian language and therefore misses about 1/3 of Asian Americans, this report contains very interesting information about vaccination rates.<br />
+    </p>
+    <p>A few highlights:<br />
+    </p>
+    <p>- Only 12% of high-risk Asian Americans age 19-64 received the pneumococcal vaccination compared to 20% of non-Hispanic whites. Only 40% of Asian Americans age 65+ had it compared to 66% among non-Hispanic whites.<br />
+      - Only 12% of Asian Americans age 19-64 received a combined tetanus and pertussis shot in the last 6 years.<br />
+      - Only 41% of Asian Americans age 19-49 had hepatitis B vaccination.<br />
+      - Only 14% of Asian Americans age 60+ had a shingles vaccination.<br />
+      - Only 22% of Asian American women age 19-24 had human papillomavirus (HPV) vaccine compared to 33% of non-Hispanic whites.<br />
+    </p>
+    <p>The report is available on line at <a href="http://www.cdc.gov/mmwr/pdf/wk/mm62e0129.pdf" target="_blank">http://www.cdc.gov/mmwr/pdf/wk/mm62e0129.pdf</a>    </p>
+    <hr />
+    <p align="left">The Institute for Asian American Studies at University of Massachusetts-Boston   has published a report, &quot;Information on Small Populations with Significant   Health Disparities: A Report on Data Collected on the Health of Asian Americans   in Massachusetts.&quot;<br />
+    </p>
+    <p align="left">The report can be downloaded at <img src="../_images/newsbuttons/2013_01_01news01.gif" width="177" height="22" onclick="MM_openBrWindow('http://bit.ly/ThZvNY','','scrollbars=yes,resizable=yes,width=800,height=600')" /></p>
+    <p align="left">Learn more about the Institute <img src="../_images/newsbuttons/2013_01_01news01b.gif" width="177" height="22" onclick="MM_openBrWindow('http://bit.ly/UZEfwj','','scrollbars=yes,resizable=yes,width=800,height=600')" /><br />
+    </p>
+<hr />
+    <br class="clearfloat" />
+    <!-- The following is a "Credit Link" to KeepandShare.  The Terms of Use agreement on your account requires free accounts have this link present & human readable on the home page of your site.  Learn more at www.keepandshare.com/creditlinks  Just transfer the following html code to your home page. -->
+  </blockquote>
+  <img src="../_images/bannerbuttons/home_bottom.gif" alt="2012 Dec News" width="972" height="41" border="0" usemap="#HomeMap" />
+  <map name="HomeMap" id="HomeMap">
+    <area shape="rect" coords="40,11,120,36" href="../index.html" />
+    <area shape="rect" coords="303,10,411,35" href="../projects.html" />
+    <area shape="rect" coords="444,12,565,32" href="../materials.html" />
+    <area shape="rect" coords="599,12,736,32" href="../resources.html" />
+    <area shape="rect" coords="151,13,272,33" href="../members.html" />
+    <area shape="rect" coords="774,10,932,33" href="../support.html" />
+  </map>
+  <!-- end #container -->
+</div>
+</body>
+</html>

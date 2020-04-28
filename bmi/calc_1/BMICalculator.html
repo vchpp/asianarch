@@ -1,0 +1,72 @@
+
+<html>
+<head>
+<title>Healthy Weight BMI Calculator</title>
+<meta name="description" content="Healthy Weight BMI Calculator" />
+<script src="bmi.js"></script>
+<link rel="stylesheet" href="bmiStyle.css" />
+</head>
+<body>
+	<div class="title">Healthy Weight BMI Calculator</div>
+	<table>
+		<tr>
+			<td valign="top">
+				<div class="inputarea">
+					<div id="topmenu">
+						<ul>
+							<li id="menuon"><a onClick="measureUS()">US Units</a></li>
+							<li><a onClick="measureMetric()">Metric</a></li>
+						</ul>
+					</div>
+					<div class="panel">
+						<table id="calinputtable">
+							<tr>
+								<td width="50">Weight</td>
+								<td id="weight" align="left" width="70"><input type="text"
+									size="2" id="weightPound" value="100"
+									style="text-align: right;"> lb</td>
+								<td width="70">&nbsp;</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="50">Height</td>
+								<td id="height1" align="left" width="70"><input type="text"
+									size="2" id="heightFeet" value="5" style="text-align: right;">
+									ft</td>
+								<td id="height2" align="left" width="70"><input type="text"
+									size="2" id="heightInches" value="0" style="text-align: right;">
+									in</td>
+								<td id="calculate"><input type="button" class="button"
+									onClick="calculateBmiUS()" value="Calculate" alt="Calculate"></td>
+							</tr>
+							<tr>
+								<td colspan="4"></td>
+							</tr>
+							<tr>
+								<td colspan="4" class="result" id="bmiWeight">Choose US or
+									Metric Units, enter your weight and height, than click on
+									Calculate.</td>
+							</tr>
+							<tr>
+								<td colspan="4"></td>
+							</tr>
+							<tr>
+								<td colspan="4" class="result" id="bmiMeaning"></td>
+							</tr>
+							<tr>
+								<td colspan="4"></td>
+							</tr>
+							<tr>
+								<td colspan="4" class="result" id="bmiStatement"></td>
+							</tr>
+							<tr>
+								<td colspan="4"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

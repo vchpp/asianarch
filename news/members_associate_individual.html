@@ -1,0 +1,368 @@
+<%@LANGUAGE="JAVASCRIPT" CODEPAGE="65001"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Core Individual Members Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #069;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 150px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #mainContent {
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #E0A51C;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table {
+	text-align: center;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.thrColAbsHdr #container #mainContent table tr th strong {
+	color: #000;
+}
+.thrColAbsHdr #container #mainContent table tr td p {
+	text-align: left;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]--></head>
+
+<body class="thrColAbsHdr">
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="494,145,622,178" href="members.html" />
+  <area shape="rect" coords="51,140,162,175" href="projects.html" />
+</map>
+<div id="container">
+  <div id="header">
+    <h1><a href="index.html"><img src="_images/bannerbuttons/members.gif" alt="ARCH Logo" width="972" height="147" border="0" usemap="#MapMap2" /></a>
+      <map name="MapMap2" id="MapMap2"><area shape="rect" coords="149,108,272,139" href="members.html" alt="Members" /><area shape="rect" coords="443,109,567,139" href="materials.html" alt="Materials" /><area shape="rect" coords="303,109,413,139" href="projects.html" alt="Projects" /><area shape="rect" coords="39,106,119,138" href="index.html" alt="Home" /><area shape="rect" coords="597,107,740,140" href="resources.html" alt="Resources" /><area shape="rect" coords="772,110,934,139" href="support.html" alt="Support" /><area shape="rect" coords="328,162,445,194" href="materials.html" />
+      </map>
+    </h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <h2>Associate Individual Members:    </h2>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="105" rowspan="2" scope="col"><p><a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank"><img src="_images/profile_photos/Adam_Burke_smj.jpg" width="90" height="129" alt="Adam Burke" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="860" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank">Adam   Burke</a><a name="adam" id="adam"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>         I am a Professor of Health Education and Director of the Institute for Holistic   Health Studies at San Francisco State University. I hold advanced degrees in   social psychology and health education and am a licensed acupuncturist.  I am an   NIH funded researcher, and my work includes  curricular innovation in holistic   health education, cross-cultural studies of traditional medicine, and meditation   and imagery.  I am a former chair of the California Acupuncture Board, and an   Advisory Council member of the NIH’s National Center for Complementary and   Alternative Medicine (NCCAM). (<a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank">Click here for SFSU Profile</a>.)<br />
+            <strong>Affiliated websites:</strong> </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="106" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5280994" target="_blank"><img src="_images/profile_photos/Alice_Chen_smj.jpg" width="90" height="129" alt="Alice Chen" /></a></th>
+        <th width="859" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5280994" target="_blank">Alice Chen</a><a name="alice" id="alice"></a></div></th>
+      </tr>
+      <tr>
+        <td height="101"><p>I am the Chief Integration Officer, Director of the Center for Innovation in Access and Quality, and Director of the eReferral Program at San Francisco General Hospital, and an Associate Professor of Medicine at the University of California, San Francisco. I am core faculty for the San Francisco General Primary Care Residency Program, and has been instrumental in developing the Partnership for Physician Advocacy Skills (PPAS) curriculum. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5280994" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="103" rowspan="2" scope="col"><p><a href="http://sph.berkeley.edu/faculty/ivey.php" target="_blank"><img src="_images/profile_photos/Susan_Ivey_smj.jpg" width="90" height="129" alt="Susan L. Ivey" /></a></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></th>
+        <th width="862" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://sph.berkeley.edu/faculty/ivey.php" target="_blank">Susan L. Ivey</a><a name="susan" id="cphc2"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>I am Director of Research and Evaluation at Health Research for Action, an   affiliated research center of University of California, Berkeley. I am also   Associate Professor in the Division of Community Health and Human Development,   UC Berkeley School of Public Health. My research focus is health disparities   research with a key interest in chronic disease risks in immigrant groups to the   US, particularly Asian American groups. I have studied cardiovascular risks and   diabetes in Chinese and South Asian populations in California. I am also a   researcher with the CDC’s Healthy Aging Research Network and have examined the   needs of older adults and caregivers in Chinese, Vietnamese, and Filipino   populations in the SF Bay Area. (<a href="http://sph.berkeley.edu/faculty/ivey.php" target="_blank">Click here for UCB Profile</a>.)<br />
+            <strong>Affiliated websites:</strong> <a href="http://www.healthresearchforaction.org/" target="_blank">Health Research for Action</a>; <a href="http://www.healthresearchforaction.org/diabetes-vulnerable-asian-populations-alameda-county" target="_blank">Asian Diabetes</a></p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="102" rowspan="2" scope="col"><p><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5349944" target="_blank"><img src="_images/profile_photos/Celia_Kaplan_smj.jpg" width="90" height="129" alt="Celia Kaplan" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="863" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5349944" target="_blank">Celia Kaplan</a><a name="celia" id="cphc"></a></div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Associate Professor of Medicine in the UCSF School of Medicine where I   conduct public health research.  I am the Co-Director of the UCSF Helen Diller   Family Comprehensive Cancer Center’s Minority Task Force, which promotes   recruitment and retention of minorities into UCSF cancer treatment trials. I   also serve on the steering committee of the Medical Effectiveness Research   Center. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5349944" target="_blank">Click here for UCSF Profile.)</a><br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="100" rowspan="2" scope="col"><a href="http://geriatrics.ucsf.edu/files/mehtakcv7.2008.pdf" target="_blank"><img src="_images/profile_photos/female_portrait_template_smp.png" width="90" height="129" alt="Kala Mehta" /></a></th>
+        <th width="865" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://geriatrics.ucsf.edu/files/mehtakcv7.2008.pdf" target="_blank">Kala   Mehta</a><a name="kala" id="cphc3"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>(<a href="http://geriatrics.ucsf.edu/files/mehtakcv7.2008.pdf" target="_blank">Click here for Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>        </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5129007" target="_blank"><img src="_images/profile_photos/Stephen_McPhee_smj.jpg" width="90" height="129" alt="Stephen McPhee" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5129007" target="_blank">Stephen McPhee</a><a name="stephen" id="cphc4"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>I am Emeritus Professor of Medicine in the UCSF School of Medicine. I am the   founder of the Vietnamese Community Health Promotion Project (<a href="http://www.suckhoelavang.org/sklvweb/en/" target="_blank">VCHPP</a>), which has been   conducting CBPR with Vietnamese American communities since 1986. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5129007" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5181442" target="_blank"><img src="_images/profile_photos/Don_Ng_smj.jpg" width="90" height="129" alt="Don Ng" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5181442" target="_blank">Don Ng</a><a name="don" id="cphc5"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>  I am a Professor of Medicine  in the UCSF School of Medicine. I am the Medical   Director of the General Medicine Practices at Mt.Zion/Divisadero. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5181442" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5238713" target="_blank"><img src="_images/profile_photos/Mike_Potter_smj.jpg" width="90" height="129" alt="Michael Potter" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5238713" target="_blank">Michael Potter</a><a name="michael" id="cphc6"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Professor of Family and Community Medicine in the UCSF School of   Medicine.  I direct the San Francisco Bay Area Collaborative Research Network   (SF Bay CRN), UCSF’s primary care practice-based research network within its   Clinical and Translational Sciences Institute. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5238713" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4844788" target="_blank"><img src="_images/profile_photos/Urmimal_Sarkar_smj.jpg" width="90" height="129" alt="Urmimala Sarkar" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4844788" target="_blank">Urmimala   Sarkar</a><a name="urmimala" id="cphc7"></a></div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Assistant Professor of Medicine in the UCSF School of Medicine.  I   am interested in patient safety for ambulatory chronic disease patients. My   research focuses on the role of communication in safety, especially for   vulnerable populations, and on health information technology to improve safety. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4844788" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5186690" target="_blank"><img src="_images/profile_photos/zian_tseng_smj.jpg" width="90" height="129" alt="Zian Tseng" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5186690" target="_blank">Zian Tseng</a><a name="zian" id="cphc9"></a></div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Associate Professor of Medicine in the UCSF School of Medicine.   I am a   cardiac electrophysiologist with a research interest  in risk stratification of   patients prone to sudden death and ventricular arrhythmias. (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5186690" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>        </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank"><img src="_images/profile_photos/Jun_Wang_smj.jpg" width="90" height="129" alt="Jun Wang" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank">Jun Wang</a><a name="jun" id="cphc10"></a></div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Professor at the Institute for Holistic Health Studies,   Department of Health Education, San Francisco State University. I am a medical   anthropologist with a degree in traditional Chinese medicine from Beijing   Capital Medical School.  My expertise in Asian American health includes East   Asian medicines and culture, ethnographic research on contemporary traditional   Chinese medicine in China and America, Chinese herbal medicine and nutrition,   and Chinese community health and colon cancer screening. (<a href="http://www.sfsu.edu/~ihhs/faculty.html" target="_blank">Click here for SFSU Profile</a>.)<br />
+        <strong>Affiliated websites:</strong> </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4828403" target="_blank"><img src="_images/profile_photos/male_portrait_clipart_smj.jpg" alt="Alan Yee" width="90" height="129" /></a></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4828403" target="_blank">Alan Yee</a><a name="alan" id="cphc12"></a></div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Assistant Professor in Neurology in the UCSF School of Medicine.  (<a href="http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4828403" target="_blank">Click here for UCSF Profile</a>.)<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><a href="http://dgim.ucsf.edu/about/yen.html" target="_blank"><img src="_images/profile_photos/Irene_Yen_smj.jpg" width="90" height="129" alt="Irene Yen" /></a></p>
+        <p>&nbsp;</p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left"><a href="http://dgim.ucsf.edu/about/yen.html" target="_blank">Irene Yen</a><a name="irene" id="cphc8"></a></div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Associate Professor of Medicine in the UCSF School of Medicine.  I am   an epidemiologist and qualitative researcher who focuses on the social   determinants of health, in particular place and health. I have conducted survey   and qualitative studies of ethnically diverse study participants, including   Asian Americans, to develop survey measurement tools that are relevant for   ethnically diverse populations. I am a member of the National Research Advisory   Committee for the Association of Asian Pacific Community Health Organizations. (<a href="http://dgim.ucsf.edu/about/yen.html" target="_blank">Click here for UCSF DGIM Profile</a>.)<br />
+        <strong>Affiliated websites:</strong> </p></td>
+      </tr>
+    </table>
+    <br />
+    <p>&nbsp;</p>
+  <p><img src="_images/bannerbuttons/members_bottom.gif" alt="Members" width="972" height="41" border="0" usemap="#MapMap2Map" />
+    <map name="MapMap2Map" id="MapMap2Map"><area shape="rect" coords="40,11,120,36" href="index.html" /><area shape="rect" coords="303,10,411,35" href="projects.html" /><area shape="rect" coords="444,12,565,32" href="materials.html" /><area shape="rect" coords="599,12,736,32" href="resources.html" /><area shape="rect" coords="151,13,272,33" href="members.html" /><area shape="rect" coords="774,10,932,33" href="support.html" /><area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" /><area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" /><area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" /><area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" /><area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" /><area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+      <area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" />
+      <area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" />
+      <area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" />
+      <area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" />
+      <area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" />
+      <area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+    </map>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp; </p>
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+</html>

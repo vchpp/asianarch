@@ -1,0 +1,374 @@
+body  {
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 1;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-image: url();
+	background-repeat: repeat;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.twoColFixLtHdr #container {
+	width: 90%;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+}
+.twoColFixLtHdr #header {
+	padding: 0 10px 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	text-align: center;
+	background-color: #FFF;
+}
+.twoColFixLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: left;
+}
+.twoColFixLtHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px;
+	background-color: #FFF;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	height: auto;
+	color: #D6D6D6;
+}
+.twoColFixLtHdr #mainContent {
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 250px;
+}
+.twoColFixLtHdr #footer {
+	padding: 0 10px 0 20px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#E0A51C;
+}
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+	text-align: center;
+}
+.twoColFixLtHdr #container #mainContent p {
+	color: #06F;
+	text-align: center;
+}
+.twoColFixLtHdr #container p iframe {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #mainContent h1 {
+	text-align: center;
+}
+.twoColFixLtHdr #container h2 {
+	color: #000;
+}
+.twoColFixLtHdr #container p {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p strong {
+	color: #000;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p em {
+	color: #FFF;
+}
+.twoColFixLtHdr #container #header table tr th font font {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	font-size: 20px;
+	color: #000;
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: center;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+}
+.twoColFixLtHdr #container #header table tr th pre {
+	text-align: left;
+	font-size: 18px;
+}
+.redcolor {
+	color: #F00;
+}
+.twoColFixLtHdr #container #sidebar1 table tr th p {
+	color: #F00;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.twoColFixLtHdr #container blockquote table {
+	font-size: 125%;
+	text-align: left;
+}
+.twoColFixLtHdr #container blockquote p strong {
+	font-size: large;
+}
+.twoColFixLtHdr #container blockquote p {
+	font-size: 14px;
+	text-align: left;
+}
+.twoColFixLtHdr #container blockquote table tr td blockquote p strong {
+	color: #00F;
+}
+.twoColFixLtHdr #container blockquote table tr td div h4 {
+	color: #03F;
+}
+.twoColFixLtHdr #container blockquote table tr td p em {
+	font-size: 24px;
+}
+.twoColFixLtHdr #container blockquote table tr td p em {
+	font-size: 18px;
+}
+.twoColFixLtHdr #container blockquote table tr td a {
+	text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify: space-around;
+  background-color: #ffffff;
+	background-color: #2B9998;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.topnav a {
+	float: left;
+	margin: 2px;
+  display: block;
+  color: #f2f2f2;
+	background-color: #2B9998;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+/* .topnav .non-dropdown {
+	padding: 14px 16px;
+} */
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 27px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.active {
+	background-color: white;
+	color: #2B9998;
+}
+/*  */
+h1 {
+  text-align: left;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); /* Fallback color */ */
+    /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ */
+}
+
+/* Modal Content */
+.modal-content {
+    /* background-color: #fefefe; */
+    background-color: #e6ebff;
+		background-image: url("_images/paper_background.jpg");
+    margin: auto;
+    padding: 60px;
+		padding-top: 20px;
+    border: 2px solid #888;
+    width: 70%;
+		font-family: arial;
+		font-size: 18px;
+}
+
+.modal-id {
+	text-align: center;
+	font-size: 22px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-center {
+	text-align: center;
+}
+.abstracts {
+	border: 1px solid #000;
+}
+.abstracts td {
+	padding: 18px;
+	font-size:20px;
+}
+.abstracts-header {
+	font-weight: bold;
+	font-size: 22px;
+	/* text-align: center; */
+}
+
+.award-link {
+	color: blue;
+}
+
+.news {
+	font-size: 24px;
+}
+
+.about {
+	font-size: 24px;
+	text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

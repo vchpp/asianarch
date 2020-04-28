@@ -1,0 +1,538 @@
+<%@LANGUAGE="JAVASCRIPT" CODEPAGE="65001"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>ARCH Core Individual Members Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #069;
+	background-color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.thrColAbsHdr #container {
+	position: relative; /* adding position: relative allows you to position the two sidebars relative to this container */
+	width: 980;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 13px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+} 
+
+/* Tips for absolutely positioned sidebars with header and footer:
+1. Absolutely positioned (AP) elements must be given a top and side value, either right or left. (As a default, if no top value is given, the AP element will begin directly after the last element in the source order of the page. This means, if the sidebars are first element in the #container in the document's source order, they will appear at the top of the #container even without being given a top value. However, if they are moved later in the source order for any reason, they'll need a top value to appear where you desire.
+2. Absolutely positioned (AP) elements are taken out of the flow of the document. This means the elements around them don't know they exist and don't account for them when taking up their proper space on the page. Thus, an AP div should only be used as a side column if you are sure the middle #mainContent div will always contain the most content. If either sidebar were to contain more content, that sidebar would run over the bottom of the parent div, and in this case the footer as well, and the sidebar would not appear to be contained.
+3. If the above mentioned requirements are met, absolutely positioned sidebars can be an easy way to control the source order of the document.
+4. If the source order is changed, the top value should be equal to the height of the header since this will cause the columns to visually meet the header.
+*/
+.thrColAbsHdr #header {
+	height: 150px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	background-color: #FFF;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 205px;
+	left: 0;
+	width: 150px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 491px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 205px;
+	right: 0;
+	width: 160px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px 15px 20px; /* padding keeps the content of the div away from the edges */
+	height: 473px;
+	background-color: #FFF;
+}
+.thrColAbsHdr #mainContent {
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.thrColAbsHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #E0A51C;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.thrColAbsHdr #container #mainContent table {
+	text-align: center;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.thrColAbsHdr #container #mainContent table tr th strong {
+	color: #000;
+}
+.thrColAbsHdr #container #mainContent table tr td p {
+	text-align: left;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+
+<body class="thrColAbsHdr">
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="494,145,622,178" href="members.html" />
+  <area shape="rect" coords="51,140,162,175" href="projects.html" />
+</map>
+<div id="container">
+  <div id="header">
+    <h1><a href="index.html"><img src="_images/bannerbuttons/members.gif" alt="ARCH Logo" width="972" height="147" border="0" usemap="#MapMap2" /></a>
+      <map name="MapMap2" id="MapMap2"><area shape="rect" coords="149,94,274,139" href="members.html" alt="Members" /><area shape="rect" coords="448,89,579,139" href="materials.html" alt="Materials" /><area shape="rect" coords="303,92,417,139" href="projects.html" alt="Projects" /><area shape="rect" coords="22,93,119,138" href="index.html" alt="Home" /><area shape="rect" coords="610,92,758,141" href="resources.html" alt="Resources" /><area shape="rect" coords="786,94,944,139" href="support.html" alt="Support" /><area shape="rect" coords="328,162,445,194" href="materials.html" />
+      </map>
+    </h1>
+  <!-- end #header --></div>
+  <div id="mainContent">
+    <h2>Core Individual Members:    </h2>
+    <a name="malinda" id="malinda"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="105" rowspan="2" scope="col"><p onclick="MM_openBrWindow('http://profiles.ucsf.edu/melinda.bender','','scrollbars=yes,resizable=yes,width=800,height=600')"><img src="_images/profile_photos/melinda_bender_sm.jpg" width="90" height="129" alt="Melinda Bender" /><img src="_images/profile.gif" alt="member profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/melinda.bender','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="860" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Melinda Bender</div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Professor in the School of Nursing, Institute for Health &amp; Aging. My research focus involves lifestyle interventions promoting healthy behavior change to reduce diabetes and heart disease risks among underserved Asian populations, particularly Filipinos. An emphasis is placed on community participation to provide culturally appropriate interventions relevant for the target population.<br />
+          <strong>Affiliated websites:</strong></p></td>
+      </tr>
+    </table>
+    <a name="nancy" id="nancy"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="104" rowspan="2" scope="col"><p><img src="_images/profile_photos/nancy_burke_sm.jpg" alt="Nancy Burke" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4823273','Nancy','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/nancy.burke','','scrollbars=yes,width=800,height=600')" /><br />
+        </p></th>
+        <th width="846" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Nancy Burke </div></th>
+      </tr>
+      <tr>
+        <td height="98"><p>I am an Associate Professor in the Department of Anthropology, History  and Social Medicine. I have conducted  research in Cuba and the U.S. on social and cultural processes associated with  chronic disease management and cancer prevention, treatment and survivorship. My research program addresses  subjectivity, bioethics, and culture. Over the last eight years I have worked  in partnership with the Philipino Senior Resource Center on studies of Filipina  breast cancer support disparities and peer navigation. I am currently principal  investigator of a study of information disparities and cancer clinical trial  recruitment in safety net hospitals.<br />
+            <strong>Affiliated websites:</strong><br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="jyu" id="cphc2"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="104" rowspan="2" scope="col"><p><img src="_images/profile_photos/JyuLin_Chen_smp.png" alt="Jyu-Lin Chen" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?Person=5217036','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?Person=5217036','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="846" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Jyu-Lin Chen </div></th>
+      </tr>
+      <tr>
+        <td height="110"><p>I am an Associate Professor in the UCSF School of Nursing.  My program of   research focuses on the impact of familial factors on Chinese and   Chinese-American children’s health, with an emphasis on obesity in children. My   research utilizes child-centered and family-oriented methods from a   bio-behavioral model. I have developed several intervention programs for   improving healthy lifestyle and preventing childhood obesity in community   settings and primary care settings.<br />
+          <strong>Affiliated websites:</strong><br />
+          <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="yoshimi" id="cphc"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="104" rowspan="2" scope="col"><img src="_images/profile_photos/Yoshimi_Fukouka_smp.png" alt="Yoshimi Fukuoka" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4832603','','scrollbars=yes,width=800,height=600');MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4832603','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4832603','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="846" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Yoshimi Fukuoka </div></th>
+      </tr>
+      <tr>
+        <td><p>  I am an Associate Professor in the UCSF School of Nursing. My research program   focuses on primary and secondary prevention of heart disease in adults,   particularly in women and ethnic/racial minorities.<br />
+        <strong>Affiliated websites:</strong>         </p>
+          <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="gordon" id="cphc3"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="104" rowspan="2" scope="col"><img src="_images/profile_photos/gordon_fung_smp.png" alt="Gordon Fung" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4847491','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4847491','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="846" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Gordon Fung </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Professor of Medicine in the UCSF School of Medicine. In addition to an   active clinical practice in cardiology, I am medical director of the UCSF Asian   Heart &amp; Vascular Center.<br />
+        <strong>Affiliated websites:</strong> </p>
+          <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="jane" id="cphc20"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="103" rowspan="2" scope="col"><p onclick="MM_openBrWindow('http://profiles.ucsf.edu/jane.jih','','scrollbars=yes,resizable=yes,width=800,height=600')"><img src="_images/profile_photos/Jane_Jih_mdj.jpg" alt="Arti Shah" width="91" height="130" /><img src="_images/profile.gif" alt="member profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/jane.jih','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="862" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Jane Jih</div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Adjunct Professor of Medicine in the Division of General Internal Medicine at UCSF.  My research focuses on preventing and managing obesity-related chronic diseases in minority and immigrant populations, particularly among Asian Americans.  My work aims to address modifiable risk factors for obesity-related diseases such as dietary habits and physical activity and to explore how immigration, language, culture and communication impact these behaviors.<br />
+          <strong>Affiliated websites:</strong></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="galen" id="cphc18"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?Person=5499002','','scrollbars=yes,resizable=yes,width=800,height=600')"><img src="_images/profile_photos/Galen_Joshep.jpg" alt="Galen Joshep" width="90" height="129" /><img src="_images/profile.gif" alt="profile" width="55" height="23" /></p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Galen Joseph </div></th>
+      </tr>
+      <tr>
+        <td><p>I am the   Assistant Professor in the Department of Anthropology, History and Social   Medicine at the University of California, San Francisco where I am also a   member of the Helen Diller Family Comprehensive Cancer Center. My research, at   the intersection of medical anthropology and public health, investigates the   socio-cultural and   institutional dimensions of inequities in cancer care.  My   research focuses specifically on clinical practices and social implications of   breast cancer genetics among economically and ethnically diverse women, and   recruitment to cancer clinical trials among vulnerable populations.<br />
+          <strong>Affiliated website:</strong><br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="alka" id="cphc22"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/alka_kanaya_mdp.png" alt="Leah Karliner" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4648330','','scrollbars=yes,resizable=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/alka.kanaya','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Leah Karliner </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a  Professor of Medicine, Epidemiology &amp;   Biostatistics at UCSF, where I see patients in General Medicine practice, teach   and mentor residents and fellows, and conduct patient-centered clinical research   in the prevention of type 2 diabetes and cardiovascular disease specifically   focusing on Asian American populations. I am the Principal Investigator for the   MASALA (Mediators of Atherosclerosis in South Asians Living in America) study. <br />
+          <strong>Affiliated websites:</strong> <img src="lost files/_images/website_logo_thumbs/MASALA_mdg.gif" alt="Mediators of Atherosclerosis in South Asian Living in America" width="47" height="36" onclick="MM_openBrWindow('http://www.masalastudy.org','','scrollbars=yes,resizable=yes,width=800,height=600')" /></p>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="leah" id="cphc8"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Leah_Karliner_sm.jpg" alt="Leah Karliner" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4648330','','scrollbars=yes,resizable=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4648330','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Leah Karliner </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Associate Professor of Medicine in the UCSF School of Medicine.  I   am committed to understanding how best to provide quality medical care across   language barriers, including increasing access to professional interpreter   services, and improving communication in the course of breast cancer care. I   currently have an R01 from the National Institute on Aging to examine a systems   intervention approach to increasing access to professional interpreters for   elderly Chinese and Spanish speaking patients in the hospital.<br />
+        <strong>Affiliated websites:</strong>         </p></td>
+      </tr>
+    </table>
+    <a name="mandana" id="cphc5"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Mandana_Khalili_smp.png" alt="Mandana Khalili" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5465205','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5465205','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Mandana Khalili </div></th>
+      </tr>
+      <tr>
+        <td><p> I am a Professor of Medicine in the UCSF School of Medicine and Chief of   Hepatology at San Francisco General Hospital. My research focuses on viral   hepatitis B and C.<br />
+        <strong>Affiliated websites:</strong>         </p>
+          <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="scarlett" id="cphc6"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/anthony_kim_smp.png" alt="Anthony Kim" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5114903','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5114903','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Anthony Kim </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Professor of Neurology in the UCSF School of Medicine and the   Medical Director of the UCSF Stroke Center.<br />
+        <strong>Affiliated websites:</strong>         </p>
+          <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="uma" id="cphc7"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Uma_Mahadevan_sm.jpg" alt="Uma Mahadevan" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5135306','','scrollbars=yes')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=5135306','','scrollbars=yes,width=800,height=600')" /><br />
+          <br />
+        </p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Uma Mahadevan </div></th>
+      </tr>
+      <tr>
+        <td height="146"><p>I am an Associate Professor of Medicine in the UCSF School of Medicine.  I am a   gastroenterologist who conduct research in Inflammatory Bowel Diseases (IBD). I   am interested in the higher incidence of IBD in the South Asian population in   the U.S. compared to India and am focusing on  environmental changes that may   drive the onset of IBD in the genetically susceptible individual.  These changes   include dietary and hygiene changes after moving to the US as well as changes in   the gut microbiome.<br />
+        <strong>Affiliated websites:</strong>          <br />
+        <br />
+        <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="arnab" id="cphc19"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Arnab_Mukherjea.jpg" alt="Arnab Mukherjea" width="90" height="129" /><img src="_images/profile.gif" alt="member profile" width="55" height="23" /></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Arnab Mukherjea</div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Professor of Health Science (Public &amp; Community Health) at California State University, East Bay.  I also maintain formal research affiliations with UCSF, UC Berkeley, and UC Davis.  My research interests largely revolve around using community-engaged methods to understand and address health disparities among understudied Asian &amp; Pacific Islander subgroups, with a particular focus on contextual and culturally-framed risk factors. My current studies are focused on understanding the myriad factors influencing unique forms of tobacco use among South Asians in the United States, and their contribution to tobacco-related disease in this population (including disproportionate burdens of cancer). This information will be ultimately valuable for comprehensive and targeted intervention strategies. I serve as a committee member on the California Health Interview Survey (representing South Asians), am a member of the Asian American Cancer Awareness, Research &amp; Training's (AANCART) Training Core, and am a member of the Data &amp; Research Subcommittee for Asian American Partners for Empowerment, Advocacy &amp; Leadership (APPEAL).<br />
+          <strong>Affiliated websites:</strong></p></td>
+      </tr>
+    </table>
+    <a name="bang" id="cphc9"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Bang_Nguyen_sm.gif" alt="Bang Nguyen" width="90" height="129" onclick="MM_openBrWindow('http://www.cpic.org/site/c.skI0L6MKJpE/b.5730381/k.C42A/Scientist_Profiles.htm','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://www.cpic.org/site/c.skI0L6MKJpE/b.5730381/k.C42A/Scientist_Profiles.htm','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="20" bgcolor="#99CCCC" scope="col"><div align="left">Bang Nguyen </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Research Scientist at the Cancer Prevention Institute of California and   Consulting Assistant Professor in the Department of Health Research and Policy   at Stanford University School of Medicine.<br />
+        <strong>Affiliated websites:</strong>         <br />
+        <br />
+        <br />
+        </p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="van" id="cphc11"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Van_Ta_Park_md.png" width="90" height="129" /><img src="_images/profile.gif" width="55" height="23" alt="Profile" /></th>
+        <th width="870" height="20" bgcolor="#99CCCC" scope="col"><div align="left">Van M. Ta Park</div></th>
+      </tr>
+      <tr>
+        <td><p>I am a tenured Associate Professor and Director  of the Undergraduate Program in Health Science at San José State University,  Department of Health Science and Recreation. My research goal is to reduce and  eliminate racial disparities in mental health and health care through health  services and prevention interdisciplinary research. In particular, I am most  interested in understanding racial differences in the barriers and facilitators  to accessing preventative and needed mental health and related services among  racial and ethnic minorities, especially among Asian Americans and Native  Hawaiians/Other Pacific Islanders across the lifespan.<br />
+          <strong>Affiliated websites:</strong> <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="rena" id="cphc10"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Rena_Pasick_sm.jpg" alt="Rena Pasick" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4751825','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4751825','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Rena Pasick </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Professor of Medicine in the UCSF School of Medicine and Associate   Director for Community Education &amp; Outreach at the UCSF Helen Diller Family   Comprehensive Cancer Center.<br />
+        <strong>Affiliated website:</strong> <a href="http://www.ph.ucla.edu/mtpccr/" target="_blank">Minority Training Program in Cancer Control Research</a>; 
+        </p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="thu" id="cphc12"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Thu_Quach_sm.jpg" alt="Thu Quach" width="90" height="129" onclick="MM_openBrWindow('http://www.cpic.org/site/c.skI0L6MKJpE/b.5730935/k.C4EA/Scientist_Profiles.htm','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://www.cpic.org/site/c.skI0L6MKJpE/b.5730935/k.C4EA/Scientist_Profiles.htm','','scrollbars=yes,width=800,height=600')" /><br />
+          <br />
+        </p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Thu Quach </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a Research Scientist at the Cancer Prevention Institute of California, where I lead several studies focusing on the booming nail salon workforce, many of whom are Vietnamese immigrant women. I also work on community-based participatory research projects (CBPR) to characterize environmental hazards in immigrant communities. In addition, I am also Director of Community Health and Research at Asian Health Services, a community health center in Oakland Chinatown, where I work with providers and other community health staff to promote research that would inform practice-based and community-based efforts to address health disparities in the Asian and Pacific Islander population.<br />
+        <strong>Affiliated websites:</strong>         <a href="http://www.cahealthynailsalons.org/" target="_blank">Cailfornia Healthy Nail Salons</a>; <a href="http://www.asianhealthservices.org/" target="_blank">Asian Health Services</a>; </p></td>
+      </tr>
+    </table>
+    <a name="vineeta" id="cphc13"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Vineeta_Singh_smj.jpg" alt="Vineeta Singh" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4877647','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4877647','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Vineeta Singh </div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Associate Professor of Neurology in the UCSF School of Medicine.<br />
+          <strong>Affiliated websites:</strong><br />
+          <br />
+        </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <a name="tan" id="cphc21"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Judy_Tan_md.png" alt="Winston Tseng" width="90" height="129" onclick="MM_openBrWindow('http://www.apiahf.org/programs/research-evaluation-and-data/staff/winston-tseng','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/Judy.tan','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Winston Tseng </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Assistant Adjunct Professor of the Center for AIDS Prevention Studies, Division of Prevention Science, in the Department of Medicine, at UCSF. My research focuses on HIV/AIDS and other health disparities among LGBT individuals of color.<br />
+          <strong>Affiliated website:</strong></p>
+          <p>&nbsp;</p>
+          <p><br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="winston" id="cphc14"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Winston_Tseng_smj.jpg" alt="Winston Tseng" width="90" height="129" onclick="MM_openBrWindow('http://www.apiahf.org/programs/research-evaluation-and-data/staff/winston-tseng','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://www.apiahf.org/programs/research-evaluation-and-data/staff/winston-tseng','','scrollbars=yes,width=800,height=600')" /></p>
+        <p>&nbsp;</p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Winston Tseng </div></th>
+      </tr>
+      <tr>
+        <td><p> I am an Assistant Adjunct Professor in the Department of Social &amp; Behavioral   Sciences at UCSF and a Senior Research Associate at the Asian &amp; Pacific   Islander American Health Forum (APIAHF). I am a medical sociologist with   extensive public health and CBPR experience with diverse and vulnerable   populations. My research focus includes research capacity building and   racial/ethnic health disparities utilizing mixed methods, participatory, and   organizational approaches. I currently serve as Co-Chair of the Health Working   Group of the University of California Asian-American and Pacific-Islander Policy   Multicampus Research Program and past Chair of the Asian Pacific Islander Caucus   for Public Health.<br />
+          <strong>Affiliated website:</strong><br />
+          <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="janice" id="cphc15"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/janice_tsoh_md.jpg" alt="Janice Tsoh" width="90" height="129" onclick="MM_openBrWindow('http://profiles.ucsf.edu/ProfileDetails.aspx?From=SE&amp;Person=4920760','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://profiles.ucsf.edu/Janice.tsoh','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Janice Tsoh </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Associate Professor in Psychiatry in the UCSF School of Medicine.  I am   also the Research Director of the Vietnamese Community Health Promotion   Project. My research focuses on addictive behaviors and nicotine dependence   treatment in special populations including depressed patients, elderly smokers,   and Asian Americans.<br />
+          <strong>Affiliated website:</strong> <a href="http://www.suckhoelavang.org/sklvweb/en/" target="_blank">Vietnamese Community Health Promotion Project</a>; </p>
+          <p>&nbsp;</p></td>
+      </tr>
+</table>
+    <a name="elisa" id="cphc17"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Elisa_Tong_smj.jpg" alt="Elisa Tong" width="90" height="129" onclick="MM_openBrWindow('http://www.ucdmc.ucdavis.edu/publish/facultybio/internalmedicine/faculty/1479','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://www.ucdmc.ucdavis.edu/publish/facultybio/internalmedicine/faculty/1479','','scrollbars=yes,width=800,height=600')" /></p>
+        <p>&nbsp;</p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Elisa   Tong </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Associate Professor of Medicine at the University of California,   Davis. My research interest is in tobacco control policy and cessation, with a   special emphasis on Asian populations.  I am Principal Investigator of an   American Cancer Society grant to develop and evaluate a novel smoke-free   counseling intervention that targets Chinese smokers and household nonsmokers,   in partnership with Chinatown Public Health Center in San Francisco.  I am   also the Sacramento Research Director, collaborating with Hmong Women's Heritage   Association, and pilot project leader with the NCI-funded Asian American Network   for Cancer Awareness Research and Training.<br />
+          <strong>Affiliated website:</strong> <br />
+          <br />
+        </p></td>
+      </tr>
+    </table>
+    <a name="irene" id="cphc4"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><p><img src="_images/profile_photos/Irene_Yen_smj.jpg" alt="Irene Yen" width="90" height="129" onclick="MM_openBrWindow('http://dgim.ucsf.edu/about/yen.html','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="member profile" width="55" height="23" onclick="MM_openBrWindow('http://dgim.ucsf.edu/about/yen.html','','scrollbars=yes,width=800,height=600')" /></p></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Irene Yen </div></th>
+      </tr>
+      <tr>
+        <td><p>I am an Associate Professor in the Departments of Medicine and Epidemiology &amp; Biostatistics, UCSF. I am also the Director of Research in the Department of Medicine, Alameda Health System / Highland Hospital. I am an epidemiologist and qualitative researcher who focuses on the social determinants of health, in particular place and health. I have conducted survey and qualitative studies of ethnically diverse study participants, including Asian Americans, to develop survey measurement tools that are relevant for ethnically diverse populations. I am a member of the community Institutional Review Board for the Association of Asian Pacific Community Health Organizations. I am a co-investigator with Nancy Burke and Janet Shim, other ARCH members, on an NIH-funded study to investigate organizational health literacy systems in safety net complex care management clinics.<br />
+          <strong>Affiliated websites:</strong></p></td>
+      </tr>
+    </table>
+    <a name="grace" id="cphc16"></a><br />
+    <table width="975" border="0">
+      <tr>
+        <th width="95" rowspan="2" scope="col"><img src="_images/profile_photos/Grace_Yoo_smj.jpg" alt="Grace Yoo" width="90" height="129" onclick="MM_openBrWindow('http://userwww.sfsu.edu/gracey/index.htm','','scrollbars=yes,width=800,height=600')" /><img src="_images/profile.gif" alt="profile" width="55" height="23" onclick="MM_openBrWindow('http://userwww.sfsu.edu/gracey/index.htm','','scrollbars=yes,width=800,height=600')" /></th>
+        <th width="870" height="25" bgcolor="#99CCCC" scope="col"><div align="left">Grace Yoo </div></th>
+      </tr>
+      <tr>
+        <td><p>I am a   Professor in the Asian American Studies Department at San Francisco State   University. My research interests include understanding the meaning of social   support on a wide range of health issues impacting Asian Americans.<br />
+          <strong>Affiliated website:</strong> <a href="https://mail.ucsf.edu/owa/redir.aspx?SURL=RtLj4CW5mqjgx56UAxSx-_O-msMpqJ1ze4DYfmU1QahBPTMJ0PbRCGgAdAB0AHAAOgAvAC8AdwB3AHcALgBzAGYAcwB1AC4AZQBkAHUALwB-AGEAYQBzAC8AeQBvAG8ALQBnAHIAYQBjAGUALgBoAHQAbQBsAA..&amp;URL=http%3a%2f%2fwww.sfsu.edu%2f%7eaas%2fyoo-grace.html" target="_blank">http://www.sfsu.edu/~aas/yoo-grace.html</a><br />
+          <br />
+        </p>
+        <p>&nbsp;</p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  <p><img src="_images/bannerbuttons/members_bottom.gif" alt="Members" width="972" height="41" border="0" usemap="#MapMap2Map" />
+    <map name="MapMap2Map" id="MapMap2Map"><area shape="rect" coords="40,11,120,36" href="index.html" /><area shape="rect" coords="303,10,411,35" href="projects.html" /><area shape="rect" coords="444,12,565,32" href="materials.html" /><area shape="rect" coords="599,12,736,32" href="resources.html" /><area shape="rect" coords="151,13,272,33" href="members.html" /><area shape="rect" coords="774,10,932,33" href="support.html" /><area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" /><area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" /><area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" /><area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" /><area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" /><area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+      <area shape="rect" coords="41,108,121,140" href="index.html" alt="Home" />
+      <area shape="rect" coords="150,110,260,140" href="projects.html" alt="Projects" />
+      <area shape="rect" coords="291,108,415,138" href="materials.html" alt="Materials" />
+      <area shape="rect" coords="444,109,587,142" href="resources.html" alt="Resources" />
+      <area shape="rect" coords="615,109,738,140" href="members.html" alt="Members" />
+      <area shape="rect" coords="768,110,930,139" href="support.html" alt="Support" />
+    </map>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp; </p>
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+</html>

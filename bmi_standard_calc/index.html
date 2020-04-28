@@ -1,0 +1,72 @@
+
+<html>
+<head>
+<title>Healthy Weight BMI Calculator</title>
+<meta name="description" content="Healthy Weight BMI Calculator" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="bmi.js"></script>
+<link rel="stylesheet" href="bmiStyle.css" />
+</head>
+<body>
+	<div>
+		<img src="bmiTitle.gif">
+	</div>
+	<div id="bmiInstructions" class="instructions">
+		Choose US or Metric Units, enter your weight and height, then click on
+		Calculate.Note that this calculator does not apply to Asian	  Americans. Please click <a href="http://www.asianarch.org/bmi/calc/BMICalculator.html">here</a> for the Healthy Weight BMI	  Calculator for Asian Americans from the Asian American	  Research Center on Health (<a href="http://www.asianarch.org">ARCH</a>) website.
+<input id="measureType" type="hidden" value="US">
+	</div>
+	<table>
+		<tr>
+			<td valign="top">
+				<div id="topmenu">
+					<ul>
+						<li id="menuon"><a onClick="measureUS()">US Units</a></li>
+						<li><a onClick="measureMetric()">Metric</a></li>
+					</ul>
+				</div>
+				<div class="bmiPanel">
+					<table>
+						<tr>
+							<td width="70">Your Height</td>
+							<td id="height1" align="left" width="100"><input type="text"
+								size="5" id="heightFeet" value="5" style="text-align: right;">
+								ft</td>
+							<td id="height2" align="left" width="100"><input type="text"
+								size="5" id="heightInches" value="0" style="text-align: right;">
+								in</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="70">Your Weight</td>
+							<td id="weight" align="left" width="100"><input type="text"
+								size="5" id="weightPounds" value="100"
+								style="text-align: right;"> lb</td>
+							<td width="100">&nbsp;</td>
+							<td id="calculate"><input type="button" class="button"
+								onClick="calculateBmiUS()" value="Calculate" alt="Calculate"></td>
+
+						</tr>
+						<tr>
+							<td colspan="4" class="result" id="bmiMeaning"></td>
+						</tr>
+						<tr>
+							<td colspan="4"></td>
+						</tr>
+						<tr>
+							<td colspan="4" class="result" id="bmiWeight"></td>
+						</tr>
+						<tr>
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="statementPanel" id="bmiStatement">A BMI less than 18.5 is underweight, a BMI from 18.5 to
+		less than 25.0 is healthy, while a BMI between 25.0 to 29.9 is
+		overweight, and a BMI above 30 is obese. BMI higher than 25 is
+		associated with increased risk of diabetes.</div>
+</body>
+</html>
