@@ -372,3 +372,11 @@ h1 {
   margin-right: auto;
   width: 50%;
 }
+
+.li-agenda {
+	font-size: 20px;
+}
+
+.agenda-sub {
+	font-style: italic;
+}
