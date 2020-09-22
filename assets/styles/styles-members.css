@@ -5,7 +5,7 @@ body  {
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 	color: #069;
 	background-color: #FFF;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
 }
 .thrColAbsHdr #container {
@@ -25,7 +25,7 @@ body  {
 	border-bottom-color: #000000;
 	border-left-color: #000000;
 	color: #000;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Tips for absolutely positioned sidebars with header and footer:
@@ -91,7 +91,7 @@ body  {
 .thrColAbsHdr #container #mainContent table {
 	text-align: left;
 	margin-left: 0px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 a:link {
 	text-decoration: none;
@@ -116,10 +116,10 @@ a:active {
 
 .topnav {
   overflow: hidden;
-	/* display: inline-block; */
-	/* justify: space-around;
-	list-style: none; */
-  /* background-color: #ffffff; */
+	display: flex;
+	flex-wrap: wrap;
+	justify: space-around;
+  background-color: #ffffff;
 	background-color: #2B9998;
 }
 
@@ -135,9 +135,9 @@ a:active {
   color: #f2f2f2;
 	background-color: #2B9998;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 17px;
 }
 
 /* .topnav .non-dropdown {
@@ -154,11 +154,11 @@ a:active {
 }
 
 .dropdown .dropbtn {
-    font-size: 27px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 10px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;

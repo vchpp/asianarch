@@ -27,7 +27,7 @@ body  {
 	border-bottom-color: #000000;
 	border-left-color: #000000;
 	color: #000;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .twoColFixLtHdr #header {
 	padding: 0 10px 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
@@ -117,7 +117,7 @@ a:active {
 	color: #FFF;
 }
 .twoColFixLtHdr #container #header table tr th font font {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family:  Arial, Helvetica, sans-serif;;
 }
 .twoColFixLtHdr #container #header table tr th pre {
 	font-size: 20px;
@@ -189,9 +189,9 @@ a:active {
   color: #f2f2f2;
 	background-color: #2B9998;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 17px;
 }
 
 /* .topnav .non-dropdown {
@@ -208,11 +208,11 @@ a:active {
 }
 
 .dropdown .dropbtn {
-    font-size: 27px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 10px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -314,7 +314,7 @@ h1 {
 		padding-top: 20px;
     border: 2px solid #888;
     width: 70%;
-		font-family: arial;
+		font-family:  Arial, Helvetica, sans-serif;
 		font-size: 18px;
 }
 
