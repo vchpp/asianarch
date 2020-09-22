@@ -1,5 +1,5 @@
 body  {
-	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	font: Arial, Helvetica, sans-serif;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 	padding: 0;
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
@@ -23,7 +23,7 @@ body  {
 	border-bottom-color: #000000;
 	border-left-color: #000000;
 	color: #000;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Tips for absolutely positioned sidebars with header and footer:
@@ -108,7 +108,10 @@ a:active {
 
 .topnav {
   overflow: hidden;
-  /* background-color: #ffffff; */
+	display: flex;
+	flex-wrap: wrap;
+	justify: space-around;
+  background-color: #ffffff;
 	background-color: #2B9998;
 }
 
@@ -124,9 +127,9 @@ a:active {
   color: #f2f2f2;
 	background-color: #2B9998;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 17px;
 }
 
 .topnav .icon {
@@ -139,11 +142,11 @@ a:active {
 }
 
 .dropdown .dropbtn {
-    font-size: 27px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 10px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -161,7 +164,7 @@ a:active {
 .dropdown-content a {
     float: none;
     color: white;
-    padding: 12px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
