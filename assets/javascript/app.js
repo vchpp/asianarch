@@ -21,8 +21,9 @@ window.onclick = function(event) {
   }
 }
 
-// home button
-// document.getElementById(home).onclick()
+function MM_openBrWindow(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
 
 // responsive navbar
 function myFunction() {
