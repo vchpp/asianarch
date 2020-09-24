@@ -171,11 +171,17 @@ a:active {
 .topnav {
   overflow: hidden;
 	display: flex;
+	text-align: justify;
 	flex-wrap: wrap;
 	justify: space-around;
   background-color: #ffffff;
 	background-color: #2B9998;
 }
+.topnav:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
 
 .topnav a:hover {
   background-color: #ddd;
