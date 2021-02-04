@@ -71,23 +71,25 @@ Once all the files on your working branch have been committed, you're going to w
 $ git push origin <BRANCH NAME>
 ```
 
-The above command will push the local branch to the origin upstream.  I think that's evident.  You'll be asked for your Github username and password if it hasn't been stored locally by a credential manager.  Once it's pushed up, you'll see a link to create a Pull Requet has been generated.  You can follow that link, or simply go to `https://github.com/vchpp/asianarch/compare`.  You're going to be creating a Pull Request for your branch against the `main` branch.  Once you do that, you can feel free to merge the changes.  Once they're merged, it'll take 5 minutes to build and publish globally.
+The above command will push the local branch to the origin upstream.  I think that's evident.  You'll be asked for your Github username and password if it hasn't been stored locally by a credential manager.  
 
-At this time, it would be a good idea to `$ git checkout main` and `$ git pull` again, so that you are ready for the next exit, when it comes along.  Don't forget to `$ git pull` again before starting work, as there may have been changes since your last edit.
+Once it's pushed up, you'll see a link to create a Pull Request has been generated.  You can follow that link, or simply go to `https://github.com/vchpp/asianarch/compare`.  You're going to be creating a Pull Request for your branch against the `main` branch.  Once you do that, click on `merge`, and then `confirm`.  
+
+Once they're merged, it'll take 5 minutes to build and publish globally.  At this time, it would be a good idea to `$ git checkout main` so that you are ready for the next edit, when it comes along.  Don't forget to `$ git pull` again before starting work, as there may have been changes since your last edit.
 
 ### Clear the Cloudflare cache
 
 Now that the origin server on Github has fresh content, you're going to want to clear the stale cache at Cloudflare.  Log in to the [Cloudflare dashboard](https://dash.cloudflare.com)
 
-![](assets/images/Screen Shot 2021-02-03 at 8.39.14 PM.png)
+![](assets/images/cloudflare_account.png)
 
 Under the Asianarch.org zone, turn on Development Mode on the homepage (this is also on the Caching page halfway down).  This will bypass the stale cache on Cloudflare and let you look at the content directly from the origin on Github.  
 
-![](assets/mages/Screen Shot 2021-02-03 at 8.39.23 PM.png)
+![](assets/images/cloudflare_overview.png)
 
 This way you can see exactly when Github begins hosting the latest content.  Once you see your changes, you can purge the entire cache and disable Development Mode.
 
-![](assets/images/Screen Shot 2021-02-03 at 8.40.44 PM.png)
+![](assets/images/cloudflare_caching.png)
 
 Finally, Cloudflare will serve the most to date content, and you are all finished.
 
